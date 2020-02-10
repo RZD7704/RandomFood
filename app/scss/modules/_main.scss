@@ -1,9 +1,20 @@
-
+.main {
+    @media (min-width: 900px) {
+        background: url(../images/desktop-bg.png)no-repeat;
+        background-size: cover;
+        min-width: 100%;
+        height: 100vh;
+    }
+}
 .title {
+    @media (min-width: 900px) {
+        color: black;
+    }
     margin-top: 0;
 }
 
 .button {
+    
     display: flex;
     justify-content: center;
     // align-items: center;
@@ -11,6 +22,10 @@
 }
 
 .btn {
+    @media (min-width: 900px) {
+        color: white;
+        background-color: var(--orange);
+    }
     background-color: inherit;
     border: 2px solid var(--orange);
     color: var(--white);
