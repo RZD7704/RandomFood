@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/global.min.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="header__first">
+			<button class="btn-menu">
+				<svg class="icon">
+					<use xlink:href="../images/sprite.svg#burger-menu"></use>
+				</svg>
+			</button>
+			<div class="profile-icons">
+				<p>Poltava</p>
+				<svg class="icon">
+					<use xlink:href="../images/sprite.svg#location"></use>
+				</svg>
+				<svg class="icon">
+					<use xlink:href="../images/sprite.svg#basket"></use>
+				</svg>
+				<svg class="icon">
+					<use xlink:href="../images/sprite.svg#profile"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="header__second">
+			<div class="logo">
+				<a class="logo-header" href="#">
+					<img class="logo-img" src="images/logo-header.png" alt="Logo">
+				</a>
+			</div>
+			<div class="block-search">
+				<input type="search" name="search" id="search" class="search">
+				<svg class="icon icon-search">
+					<use xlink:href="../images/sprite.svg#_search"></use>
+				</svg>
+			</div>
+		</div>
+
+	</header>
+	<section class="main">
+		<div class="container">
+			<h1 class="title">Сервис<br> подбора еды</h1>
+			<p class="text">Никак не можешь выбрать что заказать для себя или компании?
+				Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду, даже если
+				ты не знаешь чего хочешь.
+				Просто нажми кнопочку и получишь идеальное меню! </p>
+			<div class="button">
+				<a href="#">
+					<div class="btn">Выберите мне еду</div>
+				</a>
+			</div>
+			<p class="text">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш сервис!
+			</p>
+			<div class="button">
+				<a href="#">
+					<div class="btn">Выбрать ресторан</div>
+				</a>
+			</div>
+			<div class="img-container">
+				<a href="#stock">
+					<img src="images/arrow_down.png" alt="arrow_down">
+				</a>
+
+			</div>
+		</div>
+
+	</section>
+	<section class="stock" id="stock">
+		<div class="container">
+			<h2 class="subtitle">Акции и выгодные <br> предложения</h2>
+			<div class="main-card">
+				<img src="images/card-1.png" alt="" class="stock-img">
+				<h2 class="stock-title">Скидка на меню до 10:00</h2>
+				<p class="restourant-name">Ресторан: <span>Shade</span></p>
+				<p class="description">Булочка с кунжутом, котлета из говядины, лист салата...</p>
+				<a href="#" ><p class="in-basket">В корзину</p></a>
+			</div>
+			<div class="main-card">
+				<img src="images/card-2.png" alt="" class="stock-img">
+				<h2 class="stock-title">Горячее предложение</h2>
+				<p class="restourant-name">Ресторан: <span>Woka</span></p>
+				<p class="description">Фирменный томатный соус с базиликом, помидоры...</p>
+				<a href="#" ><p class="in-basket">В корзину</p></a>
+			</div>
+			<div class="main-card">
+				<img src="images/card-3.png" alt="" class="stock-img">
+				<h2 class="stock-title">Десерт на 70% дешевле </h2>
+				<p class="restourant-name">Кафе: <span>Кулиничи</span></p>
+				<p class="description">Сливочный сыр, песочное печенье, карамель...</p>
+				<a href="#" ><p class="in-basket">В корзину</p></a>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts__text">
+				<h1 class="contacts__text--h1">Доставка</h1>
+				<p class="contacts__text--p">Заказы свыше 150грн <br> доставляются бесплатно в <br>границах города.</p>
+			</div>
+
+			<div class="map" id="map">
+
+			</div>
+
+			<div class="contacts__devide">
+				<div class="contacts__devide--block">
+					<svg class="icon icon-clock">
+						<use xlink:href="images/sprite.svg#clock"></use>
+					</svg>
+					<p class="contacts__devide--p"> Часы работы сервиса: 10:00 - 23:00</p>
+				</div>
+
+				<div class="contacts__devide--block">
+					<svg class="icon icon-money">
+						<use xlink:href="images/sprite.svg#money"></use>
+					</svg>
+					<p class="contacts__devide--p"> Оплатить можно наличными или <br> картой при доставке</p>
+				</div>
+
+				<div class="contacts__devide--block">
+					<svg class="icon icon-bike">
+						<use xlink:href="images/sprite.svg#bike"></use>
+					</svg>
+					<p class="contacts__devide--p"> Как правило заказы <br> доставляются в пределах 60 <br> минут. В отдалённые районы <br> время доставки может быть более <br> долгим</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-body">
+		<div class="container">
+			<div class="footer">
+				<div class="footer__text">
+					<p class="footer__text--p">Наши контакты: <br> (095)7404950 </p>
+				</div>
+				<div class="footer__links">
+					<ul class="footer__links--ul">
+						<li class="footer__links--call">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+								<use xlink:href="../images/sprite.svg#footer-call"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__links--message">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+									<use xlink:href="../images/sprite.svg#footer-message"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__links--insta">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+									<use xlink:href="../images/sprite.svg#footer-insta"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
+    async defer></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.footer-body {
+    background-color: #FC9908;
+}
+.footer {
+    display: flex;
+    padding: 15px 0;
+    margin: 60px 0 10px 0;
+
+    &__text--p {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    &__links {
+        margin-left: 20%;
+    }
+
+    &__links--ul {
+        display: flex;
+    }
+
+    &__links--a {
+        display: block;
+    }
+
+    &__links--call {
+        margin-right: 5%;
+    }
+
+    &__links--message {
+        margin-right: 5%;
+    }
+
+    &__links--insta {
+        margin-right: 5%;
+    }
+
+}
