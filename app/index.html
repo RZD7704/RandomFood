@@ -23,6 +23,13 @@
 <body>
 	<header class="header" id="header">
 		<div class="header__first">
+			<div class="logo1">
+				<a class="logo-header" href="#">
+					<svg class="icon">
+						<use xlink:href="images/sprite.svg#desktop-logo"></use>
+					</svg>
+				</a>
+			</div>
 			<button class="btn-menu">
 				<svg class="icon">
 					<use xlink:href="images/sprite.svg#burger-menu"></use>
@@ -92,21 +99,27 @@
 				<h2 class="stock-title">Скидка на меню до 10:00</h2>
 				<p class="restourant-name">Ресторан: <span>Shade</span></p>
 				<p class="description">Булочка с кунжутом, котлета из говядины, лист салата...</p>
-				<a href="#" ><p class="in-basket">В корзину</p></a>
+				<a href="#">
+					<p class="in-basket">В корзину</p>
+				</a>
 			</div>
 			<div class="main-card">
 				<img src="images/card-2.png" alt="" class="stock-img">
 				<h2 class="stock-title">Горячее предложение</h2>
 				<p class="restourant-name">Ресторан: <span>Woka</span></p>
 				<p class="description">Фирменный томатный соус с базиликом, помидоры...</p>
-				<a href="#" ><p class="in-basket">В корзину</p></a>
+				<a href="#">
+					<p class="in-basket">В корзину</p>
+				</a>
 			</div>
 			<div class="main-card">
 				<img src="images/card-3.png" alt="" class="stock-img">
 				<h2 class="stock-title">Десерт на 70% дешевле </h2>
 				<p class="restourant-name">Кафе: <span>Кулиничи</span></p>
 				<p class="description">Сливочный сыр, песочное печенье, карамель...</p>
-				<a href="#" ><p class="in-basket">В корзину</p></a>
+				<a href="#">
+					<p class="in-basket">В корзину</p>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -140,7 +153,8 @@
 					<svg class="icon icon-bike">
 						<use xlink:href="images/sprite.svg#bike"></use>
 					</svg>
-					<p class="contacts__devide--p"> Как правило заказы <br> доставляются в пределах 60 <br> минут. В отдалённые районы <br> время доставки может быть более <br> долгим</p>
+					<p class="contacts__devide--p"> Как правило заказы <br> доставляются в пределах 60 <br> минут. В
+						отдалённые районы <br> время доставки может быть более <br> долгим</p>
 				</div>
 			</div>
 		</div>
@@ -156,7 +170,7 @@
 						<li class="footer__links--call">
 							<a class="footer__links--a" href="#">
 								<svg class="icon">
-								<use xlink:href="images/sprite.svg#footer-call"></use>
+									<use xlink:href="images/sprite.svg#footer-call"></use>
 								</svg>
 							</a>
 						</li>
@@ -187,7 +201,7 @@
 	<script src="js/libs/jquery.min.js"></script>
 	<script src="js/libs/bootstrap.bundle.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
-    async defer></script>
+		async defer></script>
 	<script src="js/main.js"></script>
 	<!--endbuild-->
 </body>
