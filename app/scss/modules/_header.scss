@@ -48,8 +48,9 @@
  }
 
  .logo1 {
-    @media (min-width: 899px) {
-        // display: none;
+    @media (max-width: 899px) {
+        display: none;
+
     }
     fill: white;
     
