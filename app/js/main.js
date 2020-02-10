@@ -1,4 +1,5 @@
 'use strict';
+const SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood';
 
 let map;
 
@@ -37,7 +38,43 @@ function initMap() {
 
 (function($){
 	$(document).ready(function() {
-		// Code
+		// Events
+		$('.btn-res').click(() => {
+			getRestaurant(); 	
+		});
+		
+		// Functions
+		function getRestaurant() {
+			let query = $('.search__field').val();
 
+			if (query !== '') {
+				$('body').addClass('loading');
+				$('.movie').remove();
+
+				$.ajax({
+					url: `${API_URL}/search/movie`,
+					type: 'GET',
+					data: {
+						api_key: API_KEY,
+						query: query
+					}
+				}).then((res) => {
+					if (res.results.length === 0) {
+						alert('No movies found with your search');
+					} else {
+						res.results.forEach((movie) => {
+							if (movie.poster_path !== null) {
+								$('.movies').append(drawMovie(movie));
+							}
+						});
+					}
+
+					$('body').removeClass('loading');
+				});
+
+			} else {
+				alert('Please, fill the search')
+			}
+		}
 	});
 })(jQuery);
