@@ -78,20 +78,20 @@ function browserSyncReload(done) {
 }
 
 // Error Handling
-// function plumbError() {
-//   return plumber({
-//     errorHandler: function(err) {
-//       notify.onError({
-//         templateOptions: {
-//           date: new Date()
-//         },
-//         title: "Gulp error in " + err.plugin,
-//         message: err.formatted
-//       })(err);
-//       this.emit('end');
-//     }
-//   })
-// }
+function plumbError() {
+  return plumber({
+    errorHandler: function(err) {
+      notify.onError({
+        templateOptions: {
+          date: new Date()
+        },
+        title: "Gulp error in " + err.plugin,
+        message: err.formatted
+      })(err);
+      this.emit('end');
+    }
+  })
+}
 
 // CSS task
 function styles() {
