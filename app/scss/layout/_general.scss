@@ -15,10 +15,10 @@ html {
 
 body,
 html {
-	
+
 	min-height: 100%;
 	width: 100%;
-	
+
 	font-family: $robo;
 }
 
@@ -56,10 +56,18 @@ html {
 }
 
 .text {
+	@media (min-width: 900px) {
+		color: black;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: normal;
+		letter-spacing: 0.15px;
+	}
+
 	color: var(--white);
 	font-size: 16px;
 	line-height: 20px;
-	letter-spacing: 1.75px;
+	letter-spacing: 0.25px;
 	text-align: center;
 	margin: 20px;
 	line-height: 25px;
