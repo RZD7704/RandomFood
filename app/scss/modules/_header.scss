@@ -1,29 +1,58 @@
-.header{
-    
+.desktop-bg {
+    @media (min-width: 900px) {
+        background: url(../images/desktop-bg.png)no-repeat;
+        background-size: cover;
+        min-width: 100%;
+        height: 100vh;
+    }
+}
+
+.header {
+    @media (min-width: 900px) {
+        // background: #474B5D;
+    }
+
+    background-color: #474B5D;
+
 
     &__first {
         background-color: var(--orange);
         height: 56px;
         margin-top: 8px;
         display: flex;
+        // flex-direction: row;
         justify-content: space-between;
+
+
     }
 
     &__second {
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+       
     }
 }
+
+
+
 .header-left {
     display: flex;
+    background-color: var(--orange);
+    // max-width: 60%;
 }
 
 .profile-icons {
+    @media (min-width: 900px) {
+        display: flex;
+    }
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background: var(--orange);
 }
+
 
 .icon {
     width: 32px;
@@ -44,55 +73,63 @@
 .btn-menu {
     height: 100%;
     width: 10%;
-   text-align: left;
-   background-color: inherit;
-   margin-left: 20px;
+    text-align: left;
+    background-color: inherit;
+    margin-left: 20px;
 }
- p {
-     color: white;
-     font-size: 12px;
- }
 
- .logo1 {
+p {
+    display: block;
+    color: white;
+    font-size: 12px;
+}
+
+.logo1 {
     @media (max-width: 899px) {
         display: none;
 
     }
+
     fill: white;
-    
-    svg.icon  {
+
+    svg.icon {
         width: 100px;
         height: 55px;
     }
- }
+}
 
- .logo {
+.logo {
     @media (min-width: 900px) {
         display: none;
     }
- }
+}
 
- .logo-header {
-     display: block;
-     margin-left: 15px;
-     
- }
+.logo-header {
+    @media (min-width: 900px) {
+        display: block;
+    }
 
- .logo-img {
-     width: 100px;
- }
+    display: block;
+    margin-left: 15px;
 
- .block-search {
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.block-search {
     @media (min-width: 900px) {
         display: none;
     }
-     position: relative;
-     justify-content: flex-end;
-     display: block;
+
+    position: relative;
+    justify-content: flex-end;
+    display: block;
     top: 5px;
-    }
+}
 
- .search {
+.search {
     background-color: inherit;
     border: 2px solid rgba(255, 255, 255, 0.12);
     height: 30px;
