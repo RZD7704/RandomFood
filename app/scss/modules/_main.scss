@@ -1,10 +1,8 @@
 .main {
-    @media (min-width: 900px) {
-        background: url(../images/desktop-bg.png)no-repeat;
-        background-size: cover;
-        min-width: 100%;
-        height: 100vh;
+    @media (max-width: 900px) {
+        background: #474B5D;
     }
+    
 }
 .title {
     @media (min-width: 900px) {
