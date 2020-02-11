@@ -67,28 +67,48 @@
 	</header>
 	<section class="main">
 		<div class="container">
-			<h1 class="title">Сервис<br> подбора еды</h1>
-			<p class="text">Никак не можешь выбрать что заказать для себя или компании?
-				Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду, даже если
-				ты не знаешь чего хочешь.
-				Просто нажми кнопочку и получишь идеальное меню! </p>
-			<div class="button">
-				<a href="#">
-					<div class="btn">Выберите мне еду</div>
-				</a>
-			</div>
-			<p class="text">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш сервис!
-			</p>
-			<div class="button">
-				<a href="restaurant.html">
-					<div class="btn btn-res">Выбрать ресторан</div>
-				</a>
-			</div>
-			<div class="img-container">
-				<a href="#stock">
-					<img src="images/arrow_down.png" alt="arrow_down">
-				</a>
+			<div class="main-info">
+				<h1 class="title">Сервис<br> подбора еды</h1>
+				<p class="text">Никак не можешь выбрать что заказать для себя или компании?
+					Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду, даже если
+					ты не знаешь чего хочешь.
+					Просто нажми кнопочку и получишь идеальное меню! </p>
+				<div class="button">
+					<a href="#">
+						<div class="btn">Выберите мне еду</div>
+					</a>
+				</div>
+				<p class="text">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш сервис!
+				</p>
+				<div class="button">
+					<a href="restaurant.html">
+						<div class="btn btn-res">Выбрать ресторан</div>
+					</a>
+				</div>
+				<div class="img-container">
+					<a href="#stock">
+						<img src="images/arrow_down.png" alt="arrow_down">
+					</a>
 
+				</div>
+			</div>
+			<div id="window">
+				<!-- Картинка крестика -->
+				<img class="close" src="i/close.png" alt=""  onclick="show('none')">
+				<div class="form">
+					<h2>Регистрация</h2>
+					<form action="index.html" name="f1">
+						<input type="text" placeholder="Имя" name="name1" class="input">
+						<input type="text" placeholder="Фамилия" name="name2" class="input">
+						<input type="email" placeholder="Емеил" name="email1" class="input">
+						<input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
+						<input type="password" placeholder="Пароль" name="pass1" class="input">
+						<input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
+						<input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+						<input type="radio" name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
+						<input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+					</form>
+				</div>
 			</div>
 		</div>
 
