@@ -8,9 +8,11 @@
 .title {
     @media (min-width: 900px) {
         color: black;
+        padding-top: 0;
     }
 
-    margin-top: 0;
+    margin-top: 0px;
+    padding-top: 150px;
 }
 
 .button {
@@ -41,6 +43,7 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .img-container {
@@ -49,6 +52,9 @@
     margin-top: 50px;
 }
 .main-logo {
+    @media (max-width: 900px) {
+       display: none; 
+    }
     display: flex;
     justify-content: center;
 }
@@ -59,6 +65,13 @@ svg.icon.main-logo {
         // fill: var(--orange);
         width: 250px;
         height: auto;
-        margin-top: 230px; 
+        margin-top: 170px; 
     }
 }
+
+.text-hide {
+    @media(min-width: 900px) {
+        display: none;
+    }
+}
+

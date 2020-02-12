@@ -50,8 +50,8 @@
 							<use xlink:href="images/sprite.svg#basket"></use>
 						</svg>
 					</a>
-					<a href="#">
-						<svg  class="icon">
+					<a href="#" class="profile">
+						<svg class="icon">
 							<use xlink:href="images/sprite.svg#profile"></use>
 						</svg>
 					</a>
@@ -70,7 +70,7 @@
 					</svg>
 				</div>
 			</div>
-	
+
 		</header>
 		<section class="main">
 			<div class="container">
@@ -82,7 +82,8 @@
 					</div>
 					<h1 class="title">Сервис подбора еды</h1>
 					<p class="text">Никак не можешь выбрать что заказать для себя или компании?
-						Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду, даже если
+						Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду,
+						даже если
 						ты не знаешь чего хочешь.
 						Просто нажми кнопочку и получишь идеальное меню! </p>
 					<div class="button">
@@ -90,7 +91,8 @@
 							<div class="btn">Выберите мне еду</div>
 						</a>
 					</div>
-					<p class="text">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш сервис!
+					<p class="text text-hide">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш
+						сервис!
 					</p>
 					<div class="button">
 						<a href="restaurant.html">
@@ -101,29 +103,32 @@
 						<a href="#stock">
 							<img src="images/arrow_down.png" alt="arrow_down">
 						</a>
-	
+
 					</div>
 				</div>
 			</div>
-			    <!-- Задний прозрачный фон -->
+			<!-- Задний прозрачный фон -->
 			<div onclick="show('none')" id="gray"></div>
 
 			<div id="window">
 				<!-- Картинка крестика -->
 				<div class="close-icon">
-					<svg class="icon">
-						<use xlink:href="images/sprite.svg#popup-close"></use>
-					</svg>
+					<a href="#">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#popup-close"></use>
+						</svg>
+					</a>
 				</div>
 				<div class="form">
 					<a class="logo-header form-logo" href="#">
 						<img class="form-logo-img" src="images/logo-header.png" alt="Logo">
 					</a>
 					<form action="index.html" name="f1">
-						<input type="submit" value="Google" name="sab" class="input input__networks"> 
-						<input type="submit" value="Facebook" name="sab" class="input input__networks"> 
+						<input type="submit" value="Google" name="sab" class="input input__networks">
+						<input type="submit" value="Facebook" name="sab" class="input input__networks">
 						<input type="email" placeholder="Email" name="email" class="input input__fields">
-						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
+						<input type="password" placeholder="Пароль" name="pass1"
+							class="input input__fields input__fields-last">
 						<div class="button">
 							<a href="#">
 								<div class="btn input__btn">Вход</div>
@@ -136,9 +141,9 @@
 						</div>
 					</form>
 				</div>
-				
+
 			</div>
-	
+
 		</section>
 	</div>
 	<section class="stock" id="stock">

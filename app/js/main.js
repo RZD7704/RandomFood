@@ -3,6 +3,7 @@ const SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood';
 
 let map;
 
+
 function initMap() {
 	let map, coords, styles, marker, info, content;
 
@@ -37,11 +38,28 @@ function initMap() {
 }
 
 (function($){
+	//variables
+	
+
 	$(document).ready(function() {
 		// Events
 		$('.btn-res').click(() => {
 			getRestaurant(); 	
 		});
+
+		$('.profile').click(() => {
+			show();
+		});
+
+		$('.close-icon').click(() => {
+			hide();
+		});
+
+
+
+	close.onclick = hide();	
+	// profile.onclick = show();
+
 		
 		// Functions
 		function getRestaurant() {
@@ -75,6 +93,15 @@ function initMap() {
 			} else {
 				alert('Please, fill the search')
 			}
+		}
+
+		function show() {
+			document.getElementById('window').style.display = "block";
+		}
+
+		function hide() {
+			
+			document.getElementById('window').style.display = "none";
 		}
 	});
 })(jQuery);
