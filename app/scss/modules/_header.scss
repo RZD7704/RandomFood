@@ -4,15 +4,19 @@
         background-size: cover;
         min-width: 100%;
         height: 100vh;
+        z-index: 2;
+
     }
 }
 
 .header {
-    @media (min-width: 900px) {
-        // background: #474B5D;
-    }
+    position: absolute;
+    width: 100%;
 
-    background-color: #474B5D;
+    background: #474B5D;
+    @media (min-width: 900px) {
+        background: none;
+    }
 
 
     &__first {
