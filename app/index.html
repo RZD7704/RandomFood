@@ -51,7 +51,7 @@
 						</svg>
 					</a>
 					<a href="#">
-						<svg class="icon">
+						<svg  class="icon">
 							<use xlink:href="images/sprite.svg#profile"></use>
 						</svg>
 					</a>
@@ -100,6 +100,9 @@
 					</div>
 				</div>
 			</div>
+			    <!-- Задний прозрачный фон -->
+			<div onclick="show('none')" id="gray"></div>
+
 			<div id="window">
 				<!-- Картинка крестика -->
 				<div class="close-icon">
@@ -108,14 +111,24 @@
 					</svg>
 				</div>
 				<div class="form">
-					<a class="logo-header" href="#">
-						<img class="logo-img" src="images/logo-header.png" alt="Logo">
+					<a class="logo-header form-logo" href="#">
+						<img class="form-logo-img" src="images/logo-header.png" alt="Logo">
 					</a>
 					<form action="index.html" name="f1">
-						<input type="email" placeholder="Email" name="email" class="input">
-						<input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
-						<input type="password" placeholder="Пароль" name="pass1" class="input">
-						<input type="submit" value="Регистрация" name="sab" class="input"> 
+						<input type="submit" value="Google" name="sab" class="input input__networks"> 
+						<input type="submit" value="Facebook" name="sab" class="input input__networks"> 
+						<input type="email" placeholder="Email" name="email" class="input input__fields">
+						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
+						<div class="button">
+							<a href="#">
+								<div class="btn input__btn">Вход</div>
+							</a>
+						</div>
+						<div class="button">
+							<a href="#">
+								<div class="btn input__btn input__btn-2">Регистрация</div>
+							</a>
+						</div>
 					</form>
 				</div>
 				
