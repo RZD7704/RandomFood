@@ -1,0 +1,19 @@
+#window-reg {
+    width: 335px;
+    height: 565px;
+    margin: 150px auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.input__button {
+    margin-top: 30px;
+}
