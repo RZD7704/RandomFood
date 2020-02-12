@@ -108,7 +108,7 @@
 			    <!-- Задний прозрачный фон -->
 			<div onclick="show('none')" id="gray"></div>
 
-			<div id="window">
+			<div id="window-log" name="window">
 				<!-- Картинка крестика -->
 				<div class="close-icon">
 					<svg class="icon">
@@ -117,14 +117,16 @@
 				</div>
 				<div class="form">
 					<a class="logo-header form-logo" href="#">
-						<img class="form-logo-img" src="images/logo-header.png" alt="Logo">
+						<svg class="icon form-logo-img">
+							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+						</svg>
 					</a>
 					<form action="index.html" name="f1">
 						<input type="submit" value="Google" name="sab" class="input input__networks"> 
 						<input type="submit" value="Facebook" name="sab" class="input input__networks"> 
 						<input type="email" placeholder="Email" name="email" class="input input__fields">
 						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
-						<div class="button">
+						<div class="button input__btn-1">
 							<a href="#">
 								<div class="btn input__btn">Вход</div>
 							</a>
@@ -132,6 +134,68 @@
 						<div class="button">
 							<a href="#">
 								<div class="btn input__btn input__btn-2">Регистрация</div>
+							</a>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			
+			<div id="window-reg" name="window">
+				<!-- Картинка крестика -->
+				<div class="close-icon">
+					<svg class="icon">
+						<use xlink:href="images/sprite.svg#popup-close"></use>
+					</svg>
+				</div>
+				<div class="form">
+					<a class="logo-header form-logo" href="#">
+						<svg class="icon form-logo-img">
+							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+						</svg>
+					</a>
+					<form action="index.html" name="f1">
+						<input type="submit" value="Google" name="sab" class="input input__networks"> 
+						<input type="submit" value="Facebook" name="sab" class="input input__networks"> 
+						<input type="email" placeholder="Email" name="email" class="input input__fields">
+						<input type='tel' placeholder="Мобильный телефон" name="tel" class="input input__fields input__fields-last">
+						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
+						<div class="button input__button">
+							<a href="#">
+								<div class="btn input__btn">Вход</div>
+							</a>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+
+			<div id="window-reg-end" name="window">
+				<!-- Картинка крестика -->
+				<div class="close-icon">
+					<svg class="icon">
+						<use xlink:href="images/sprite.svg#popup-close"></use>
+					</svg>
+				</div>
+				<div class="form">
+					<a class="logo-header form-logo" href="#">
+						<svg class="icon form-logo-img">
+							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+						</svg>
+					</a>
+					<div class="reg-end__info">
+						<h1 class="reg-end__info--h1">Спасибо за <br> регистрацию!</h1>
+						<p class="reg-end__info--p"> Перейди на главную, <br> чтобы рандомно выбрать меню <br> для себя.</p>
+					</div>
+					<form action="index.html" name="f1">
+						<div class="button input__btn-1">
+							<a href="#">
+								<div class="btn input__btn">НА ГЛАВНУЮ</div>
+							</a>
+						</div>
+						<div class="button">
+							<a href="#">
+								<div class="btn input__btn input__btn-2">МОЙ КАБИНЕТ</div>
 							</a>
 						</div>
 					</form>
