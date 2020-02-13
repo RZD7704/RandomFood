@@ -1,6 +1,13 @@
 .contacts {
     background: #474B5D;
 
+    &__devide {
+        @media (min-width: 900px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
     &__text--h1 {
         font-size: 22px;
         font-weight: 500;
@@ -20,11 +27,15 @@
     }
 
     .icon-bike {
+        @media (min-width: 900px) {
+            margin-top: 25px;
+        }
+
         margin-top: 35px;
     }
 
     &__devide--p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     // &__devide--img {
@@ -33,9 +44,19 @@
     //     height: 25px;
     // }
      &__devide--block {
+        @media (min-width: 900px) {
+            margin-right: 40px;
+        }
+
         display: block;
         display: flex;
         margin-top: 50px;
+    }
+
+    &__devide--block:last-child {
+        @media (min-width: 900px) {
+            margin-right: 0;
+        }
     }
 
     .map {
