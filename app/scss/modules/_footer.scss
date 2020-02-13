@@ -3,6 +3,9 @@
 }
 .footer {
     display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     padding: 15px 0;
     margin: 60px 0 10px 0;
 
@@ -13,12 +16,22 @@
         margin-left: 20px;
     }
 
+    &__text {
+        a {
+            text-decoration: none;
+        }
+        
+    }
+
     &__links {
-        margin-left: 20%;
+        // margin-left: 20%;
+        display: flex;
+        align-items: center;
     }
 
     &__links--ul {
         display: flex;
+        
     }
 
     &__links--a {

@@ -96,12 +96,12 @@ function initMap() {
 		}
 
 		function show() {
-			document.getElementById('window').style.display = "block";
+			document.getElementById('window-log').style.display = "block";
 		}
 
 		function hide() {
 			
-			document.getElementById('window').style.display = "none";
+			document.getElementById('window-log').style.display = "none";
 		}
 	});
 })(jQuery);
