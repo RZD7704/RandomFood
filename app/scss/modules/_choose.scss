@@ -1,15 +1,104 @@
 #window-choose {
     width: 335px;
-    height: 465px;
+    height: 565px;
     margin: 150px auto;
     background: #fff;
     border: 1px solid #fff;
     border-radius: 0;
     z-index: 150;
-    // display: none;
+    display: none;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+.form {
+    &__h1 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FC9908;
+    }
+
+    &__legend {
+        margin-top: 35px;
+
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    &__type {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__type--legend {
+        margin-top: 25px;
+
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    &__div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+    }
+
+    &__h2 {
+        margin-top: 25px;
+    }
+
+    &__p {
+        display: block;
+        color: #FC9908;
+        margin-top: 3px;
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__a {
+        display: block;
+    }
+
+    &__location {
+        fill: #FC9908;
+        margin-right: 0;
+    }
+
+    &__btn {
+        margin-top: -10px;
+    }
+
+    #check1 {
+        width: 24px;
+        margin-left: 5px;
+
+    }
+
+    #check2 {
+        width: 20px;
+        height: auto;
+    }
+
+    .check {
+        // display: block;
+        width: min-content;
+
+    }
+
+    &__country {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
