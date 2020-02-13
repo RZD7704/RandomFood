@@ -1,365 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Starter" />
+    <meta name="author" content="Admin" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Starter</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Starter">
-	<meta name="author" content="Admin">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>Starter</title>
+    <link rel="icon" href="images/favicon.png" />
 
-	<link rel="icon" href="images/favicon.png">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.min.css" />
+    <!--endbuild-->
 
-	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="css/global.min.css">
-	<!--endbuild-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+  <body>
+    <div class="desktop-bg">
+      <header class="header" id="header">
+        <div class="header__first">
+          <div class="header-left">
+            <div class="logo1">
+              <a class="logo-header" href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#desktop-logo"></use>
+                </svg>
+              </a>
+            </div>
+            <button class="btn-menu">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#burger-menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="profile-icons">
+            <p>Poltava</p>
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#location"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#basket"></use>
+              </svg>
+            </a>
+            <a href="#" class="profile">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#profile"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__second">
+          <div class="logo">
+            <a class="logo-header" href="#">
+              <img class="logo-img" src="images/logo-header.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="block-search">
+            <input type="search" name="search" id="search" class="search" />
+            <svg class="icon icon-search">
+              <use xlink:href="images/sprite.svg#_search"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <div class="container">
+          <div class="main-info">
+            <div class="main-logo">
+              <svg class="icon main-logo__icon">
+                <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+              </svg>
+            </div>
+            <h1 class="title">Сервис подбора <br> еды</h1>
+            <p class="text">
+              Никак не можешь выбрать что заказать для себя или компании? Мы
+              поможем найти самые выгодные и вкусные предложения твоего города!
+              Или просто подберем еду, даже если ты не знаешь чего хочешь.
+              Просто нажми кнопочку и получишь идеальное меню!
+            </p>
+            <div class="button">
+              <a href="#">
+                <div class="btn">Выберите мне еду</div>
+              </a>
+            </div>
+            <p class="text text-hide">
+              А если все-таки хочешь выбрать еду сам - заказывай быстро и просто
+              прямо через наш сервис!
+            </p>
+            <div class="button">
+              <a href="restaurant.html">
+                <div class="btn btn-res">Выбрать ресторан</div>
+              </a>
+            </div>
+            <div class="img-container">
+              <a href="#stock">
+                <img src="images/arrow_down.png" alt="arrow_down" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-<body>
-	<div class="desktop-bg">
-		<header class="header" id="header">
-			<div class="header__first">
-				<div class="header-left">
-					<div class="logo1">
-						<a class="logo-header" href="#">
-							<svg class="icon">
-								<use xlink:href="images/sprite.svg#desktop-logo"></use>
-							</svg>
-						</a>
-					</div>
-					<button class="btn-menu">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#burger-menu"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="profile-icons">
-					<p>Poltava</p>
-					<a href="#">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#location"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#basket"></use>
-						</svg>
-					</a>
-					<a href="#" class="profile">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#profile"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="header__second">
-				<div class="logo">
-					<a class="logo-header" href="#">
-						<img class="logo-img" src="images/logo-header.png" alt="Logo">
-					</a>
-				</div>
-				<div class="block-search">
-					<input type="search" name="search" id="search" class="search">
-					<svg class="icon icon-search">
-						<use xlink:href="images/sprite.svg#_search"></use>
-					</svg>
-				</div>
-			</div>
+        <div id="window-choose" name="window">
+          <!-- Картинка крестика -->
+          <div class="close-icon">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#popup-close"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="form">
+            <h1 class="form__h1">Еще всего один шаг <br> до меню мечты!</h1>
+            <legend class="form__legend">Сколько людей нам нужно накормить?</legend>
+            <input id="check1" type="number" name="check" value="1" />
 
-		</header>
-		<section class="main">
-			<div class="container">
-				<div class="main-info">
-					<div class="main-logo">
-						<svg class="icon main-logo__icon">
-							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
-						</svg>
-					</div>
-					<h1 class="title">Сервис подбора еды</h1>
-					<p class="text">Никак не можешь выбрать что заказать для себя или компании?
-						Мы поможем найти самые выгодные и вкусные предложения твоего города! Или просто подберем еду,
-						даже если
-						ты не знаешь чего хочешь.
-						Просто нажми кнопочку и получишь идеальное меню! </p>
-					<div class="button">
-						<a href="#">
-							<div class="btn">Выберите мне еду</div>
-						</a>
-					</div>
-					<p class="text text-hide">А если все-таки хочешь выбрать еду сам - заказывай быстро и просто прямо через наш
-						сервис!
-					</p>
-					<div class="button">
-						<a href="restaurant.html">
-							<div class="btn btn-res">Выбрать ресторан</div>
-						</a>
-					</div>
-					<div class="img-container">
-						<a href="#stock">
-							<img src="images/arrow_down.png" alt="arrow_down">
-						</a>
+			
+				<legend class="form__type--legend">Что нужно?</legend>
+			<div class="form__type">
+				<label class="check" for="check2">
+				<input class="check" id="check2" type="checkbox" name="check" value="check2" />
+				Основное
+				</label>
 
-					</div>
-				</div>
-			</div>
+				<label class="check" for="check3">
+				<input id="check3" type="checkbox" name="check" value="check3" />
+				Десерт
+				</label>
 
-			<div id="window-choose" name="window">
-				<!-- Картинка крестика -->
-				<div class="close-icon">
-					<a href="#">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#popup-close"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="form">
-					<h1 class="form__h1"></h1>
-					<legend class="form__legend"></legend>
-					<input id="check1" type="number" name="check" value="check1">
-
-
-					<legend class="form__legend"></legend>
-					<input id="check2" type="checkbox" name="check" value="check1">
-					<label for="check2">Основное</label>
-
-					<input id="check3" type="checkbox" name="check" value="check1">
-					<label for="check3">Десерт</label>
-
-					<input id="check4" type="checkbox" name="check" value="check1">
-					<label for="check4">Напиток</label>
-
-
-				</div>
-
-			</div>
-
-
-
-			<!-- Задний прозрачный фон -->
-			<div onclick="show('none')" id="gray"></div>
-
-
-			<!-- LOG REG REG-END-->
-			<div id="window-log" name="window">
-				<!-- Картинка крестика -->
-				<div class="close-icon">
-					<a href="#">
-						<svg class="icon">
-							<use xlink:href="images/sprite.svg#popup-close"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="form">
-					<a class="logo-header form-logo" href="#">
-						<svg class="icon form-logo-img">
-							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
-						</svg>
-					</a>
-					<form action="index.html" name="f1">
-						<input type="submit" value="Google" name="sab" class="input input__networks">
-						<input type="submit" value="Facebook" name="sab" class="input input__networks">
-						<input type="email" placeholder="Email" name="email" class="input input__fields">
-						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
-						<div class="button input__btn-1">
-							<a href="#">
-								<div class="btn input__btn">Вход</div>
-							</a>
-						</div>
-						<div class="button">
-							<a href="#">
-								<div class="btn input__btn input__btn-2">Регистрация</div>
-							</a>
-						</div>
-					</form>
-				</div>
-
+				<label class="check" for="check4">
+				<input id="check4" type="checkbox" name="check" value="check4" />
+				Напиток
+				</label>
 			</div>
 			
-			<div id="window-reg" name="window">
-				<!-- Картинка крестика -->
-				<div class="close-icon">
-					<svg class="icon">
-						<use xlink:href="images/sprite.svg#popup-close"></use>
-					</svg>
-				</div>
-				<div class="form">
-					<a class="logo-header form-logo" href="#">
-						<svg class="icon form-logo-img">
-							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
-						</svg>
-					</a>
-					<form action="index.html" name="f1">
-						<input type="submit" value="Google" name="sab" class="input input__networks"> 
-						<input type="submit" value="Facebook" name="sab" class="input input__networks"> 
-						<input type="email" placeholder="Email" name="email" class="input input__fields">
-						<input type='tel' placeholder="Мобильный телефон" name="tel" class="input input__fields input__fields-last">
-						<input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last">
-						<div class="button input__button">
-							<a href="#">
-								<div class="btn input__btn">Вход</div>
-							</a>
-						</div>
-					</form>
-				</div>
+				<legend class="form__type--legend">Какую кухню выберешь?</legend>
+			<div class="form__country">
+				<label class="check" for="check5">
+				<input id="check5" type="radio" name="check" value="check5" />
+				Любая
+				</label>
+
+				<label class="check" for="check6">
+				<input id="check6" type="radio" name="check" value="check6" />
+				Европа
+				</label>
+
+				<label class="check" for="check7">
+				<input id="check7" type="radio" name="check" value="check7" />
+				Азия
+				</label>
 				
+				<label class="check" for="check8">
+				<input id="check8" type="radio" name="check" value="check8" />
+				Украинская
+				</label>
 			</div>
 
-			<div id="window-reg-end" name="window">
-				<!-- Картинка крестика -->
-				<div class="close-icon">
-					<svg class="icon">
-						<use xlink:href="images/sprite.svg#popup-close"></use>
-					</svg>
-				</div>
-				<div class="form">
-					<a class="logo-header form-logo" href="#">
-						<svg class="icon form-logo-img">
-							<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
-						</svg>
-					</a>
-					<div class="reg-end__info">
-						<h1 class="reg-end__info--h1">Спасибо за <br> регистрацию!</h1>
-						<p class="reg-end__info--p"> Перейди на главную, <br> чтобы рандомно выбрать меню <br> для себя.</p>
-					</div>
-					<form action="index.html" name="f1">
-						<div class="button input__btn-1">
-							<a href="#">
-								<div class="btn input__btn">НА ГЛАВНУЮ</div>
-							</a>
-						</div>
-						<div class="button">
-							<a href="#">
-								<div class="btn input__btn input__btn-2">МОЙ КАБИНЕТ</div>
-							</a>
-						</div>
-					</form>
-				</div>
-				
+
+				<h2 class="form__h2">Город доставки</h2>
+			<div class="form__div">
+				<a class="form__a" href="#"></a>
+				<p class="form__p">Полтава</p>
+				<svg class="icon form__location">
+					<use xlink:href="images/sprite.svg#location"></use>
+				</svg>
+				</a>
 			</div>
-	
-		</section>
-	</div>
-	<section class="stock" id="stock">
-		<div class="container">
-			<h2 class="subtitle">Акции и выгодные <br> предложения</h2>
+			
+			<div class="button input__button">
+                <a href="#">
+                  <div class="btn input__btn form__btn">Вход</div>
+                </a>
+              </div>
+          </div>
+        </div>
 
-			<div class="main-cards">
-				<div class="main-card">
-					<img src="images/card-1.png" alt="" class="stock-img">
-					<h2 class="stock-title">Скидка на меню до 10:00</h2>
-					<p class="restourant-name">Ресторан: <span>Shade</span></p>
-					<p class="description">Булочка с кунжутом, котлета из говядины, лист салата...</p>
-					<a href="#">
-						<p class="in-basket">В корзину</p>
-					</a>
-				</div>
-				<div class="main-card">
-					<img src="images/card-2.png" alt="" class="stock-img">
-					<h2 class="stock-title">Горячее предложение</h2>
-					<p class="restourant-name">Ресторан: <span>Woka</span></p>
-					<p class="description">Фирменный томатный соус с базиликом, помидоры...</p>
-					<a href="#">
-						<p class="in-basket">В корзину</p>
-					</a>
-				</div>
-				<div class="main-card">
-					<img src="images/card-3.png" alt="" class="stock-img">
-					<h2 class="stock-title">Десерт на 70% дешевле </h2>
-					<p class="restourant-name">Кафе: <span>Кулиничи</span></p>
-					<p class="description">Сливочный сыр, песочное печенье, карамель...</p>
-					<a href="#">
-						<p class="in-basket">В корзину</p>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="contacts">
-		<div class="container">
-			<div class="contacts__text">
-				<h1 class="contacts__text--h1">Доставка</h1>
-				<p class="contacts__text--p">Заказы свыше 150грн <br> доставляются бесплатно в <br>границах города.</p>
-			</div>
+        <!-- Задний прозрачный фон -->
+        <div onclick="show('none')" id="gray"></div>
 
-			<div class="map" id="map">
+        <!-- LOG REG REG-END-->
+        <div id="window-log" name="window">
+          <!-- Картинка крестика -->
+          <div class="close-icon">
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#popup-close"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="form">
+            <a class="logo-header form-logo" href="#">
+              <svg class="icon form-logo-img">
+                <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+              </svg>
+            </a>
+            <form action="index.html" name="f1">
+              <input
+                type="submit"
+                value="Google"
+                name="sab"
+                class="input input__networks"
+              />
+              <input
+                type="submit"
+                value="Facebook"
+                name="sab"
+                class="input input__networks"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="input input__fields"
+              />
+              <input
+                type="password"
+                placeholder="Пароль"
+                name="pass1"
+                class="input input__fields input__fields-last"
+              />
+              <div class="button input__btn-1">
+                <a href="#">
+                  <div class="btn input__btn">Вход</div>
+                </a>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <div class="btn input__btn input__btn-2">Регистрация</div>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
 
-			</div>
+        <div id="window-reg" name="window">
+          <!-- Картинка крестика -->
+          <div class="close-icon">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#popup-close"></use>
+            </svg>
+          </div>
+          <div class="form">
+            <a class="logo-header form-logo" href="#">
+              <svg class="icon form-logo-img">
+                <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+              </svg>
+            </a>
+            <form action="index.html" name="f1">
+              <input
+                type="submit"
+                value="Google"
+                name="sab"
+                class="input input__networks"
+              />
+              <input
+                type="submit"
+                value="Facebook"
+                name="sab"
+                class="input input__networks"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="input input__fields"
+              />
+              <input
+                type="tel"
+                placeholder="Мобильный телефон"
+                name="tel"
+                class="input input__fields input__fields-last"
+              />
+              <input
+                type="password"
+                placeholder="Пароль"
+                name="pass1"
+                class="input input__fields input__fields-last"
+              />
+              <div class="button input__button">
+                <a href="#">
+                  <div class="btn input__btn">Вход</div>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
 
-			<div class="contacts__devide">
-				<div class="contacts__devide--block">
-					<svg class="icon icon-clock">
-						<use xlink:href="images/sprite.svg#clock"></use>
-					</svg>
-					<p class="contacts__devide--p"> Часы работы сервиса: 10:00 - 23:00</p>
-				</div>
+        <div id="window-reg-end" name="window">
+          <!-- Картинка крестика -->
+          <div class="close-icon">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#popup-close"></use>
+            </svg>
+          </div>
+          <div class="form">
+            <a class="logo-header form-logo" href="#">
+              <svg class="icon form-logo-img">
+                <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+              </svg>
+            </a>
+            <div class="reg-end__info">
+              <h1 class="reg-end__info--h1">
+                Спасибо за <br />
+                регистрацию!
+              </h1>
+              <p class="reg-end__info--p">
+                Перейди на главную, <br />
+                чтобы рандомно выбрать меню <br />
+                для себя.
+              </p>
+            </div>
+            <form action="index.html" name="f1">
+              <div class="button input__btn-1">
+                <a href="#">
+                  <div class="btn input__btn">НА ГЛАВНУЮ</div>
+                </a>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <div class="btn input__btn input__btn-2">МОЙ КАБИНЕТ</div>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="stock" id="stock">
+      <div class="container">
+        <h2 class="subtitle">
+          Акции и выгодные <br />
+          предложения
+        </h2>
 
-				<div class="contacts__devide--block">
-					<svg class="icon icon-money">
-						<use xlink:href="images/sprite.svg#money"></use>
-					</svg>
-					<p class="contacts__devide--p"> Оплатить можно наличными или <br> картой при доставке</p>
-				</div>
+        <div class="main-cards">
+          <div class="main-card">
+            <img src="images/card-1.png" alt="" class="stock-img" />
+            <h2 class="stock-title">Скидка на меню до 10:00</h2>
+            <p class="restourant-name">Ресторан: <span>Shade</span></p>
+            <p class="description">
+              Булочка с кунжутом, котлета из говядины, лист салата...
+            </p>
+            <a href="#">
+              <p class="in-basket">В корзину</p>
+            </a>
+          </div>
+          <div class="main-card">
+            <img src="images/card-2.png" alt="" class="stock-img" />
+            <h2 class="stock-title">Горячее предложение</h2>
+            <p class="restourant-name">Ресторан: <span>Woka</span></p>
+            <p class="description">
+              Фирменный томатный соус с базиликом, помидоры...
+            </p>
+            <a href="#">
+              <p class="in-basket">В корзину</p>
+            </a>
+          </div>
+          <div class="main-card">
+            <img src="images/card-3.png" alt="" class="stock-img" />
+            <h2 class="stock-title">Десерт на 70% дешевле</h2>
+            <p class="restourant-name">Кафе: <span>Кулиничи</span></p>
+            <p class="description">
+              Сливочный сыр, песочное печенье, карамель...
+            </p>
+            <a href="#">
+              <p class="in-basket">В корзину</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__text">
+          <h1 class="contacts__text--h1">Доставка</h1>
+          <p class="contacts__text--p">
+            Заказы свыше 150грн <br />
+            доставляются бесплатно в <br />границах города.
+          </p>
+        </div>
 
-				<div class="contacts__devide--block">
-					<svg class="icon icon-bike">
-						<use xlink:href="images/sprite.svg#bike"></use>
-					</svg>
-					<p class="contacts__devide--p"> Как правило заказы <br> доставляются в пределах 60 <br> минут. В
-						отдалённые районы <br> время доставки может быть более <br> долгим</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="footer-body">
-		<div class="container">
-			<div class="footer">
-				<div class="footer__text">
-					<p class="footer__text--p">Наши контакты: <br> (095)7404950 </p>
-				</div>
-				<div class="footer__links">
-					<ul class="footer__links--ul">
-						<li class="footer__links--call">
-							<a class="footer__links--a" href="#">
-								<svg class="icon">
-									<use xlink:href="images/sprite.svg#footer-call"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__links--message">
-							<a class="footer__links--a" href="#">
-								<svg class="icon">
-									<use xlink:href="images/sprite.svg#footer-message"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer__links--insta">
-							<a class="footer__links--a" href="#">
-								<svg class="icon">
-									<use xlink:href="images/sprite.svg#footer-insta"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+        <div class="map" id="map"></div>
 
+        <div class="contacts__devide">
+          <div class="contacts__devide--block">
+            <svg class="icon icon-clock">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+            <p class="contacts__devide--p">
+              Часы работы сервиса: 10:00 - 23:00
+            </p>
+          </div>
 
+          <div class="contacts__devide--block">
+            <svg class="icon icon-money">
+              <use xlink:href="images/sprite.svg#money"></use>
+            </svg>
+            <p class="contacts__devide--p">
+              Оплатить можно наличными или <br />
+              картой при доставке
+            </p>
+          </div>
 
+          <div class="contacts__devide--block">
+            <svg class="icon icon-bike">
+              <use xlink:href="images/sprite.svg#bike"></use>
+            </svg>
+            <p class="contacts__devide--p">
+              Как правило заказы <br />
+              доставляются в пределах 60 <br />
+              минут. В отдалённые районы <br />
+              время доставки может быть более <br />
+              долгим
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-body">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__text">
+            <p class="footer__text--p">
+              Наши контакты: <br />
+              (095)7404950
+            </p>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__links--ul">
+              <li class="footer__links--call">
+                <a class="footer__links--a" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#footer-call"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__links--message">
+                <a class="footer__links--a" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#footer-message"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__links--insta">
+                <a class="footer__links--a" href="#">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#footer-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-	<!--build:js js/main.min.js -->
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
-		async defer></script>
-	<script src="js/main.js"></script>
-	<!--endbuild-->
-</body>
-
+    <!--build:js js/main.min.js -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="js/main.js"></script>
+    <!--endbuild-->
+  </body>
 </html>
