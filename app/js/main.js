@@ -13,38 +13,38 @@ function initMap() {
 	};
 	content = '<h1 class="info-title">I\'m here</h1>';
 	styles = []
-		
-  map = new google.maps.Map(document.getElementById('map'), {
-	center: coords,
-	zoom: 11,
-	styles: styles,
-	disableDefaultUI: true,
-  });
 
-  marker = new google.maps.Marker({
-	  position: coords, 
-	  map: map,
-	  icon: 'images/marker.png',
-	  draggable: true
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: coords,
+		zoom: 11,
+		styles: styles,
+		disableDefaultUI: true,
+	});
+
+	marker = new google.maps.Marker({
+		position: coords,
+		map: map,
+		icon: 'images/marker.png',
+		draggable: true
 	});
 
 	info = new google.maps.InfoWindow({
 		content: content
-	  });
+	});
 
-	marker.addListener('click', function() {
+	marker.addListener('click', function () {
 		info.open(map, marker);
 	});
 }
 
-(function($){
+(function ($) {
 	//variables
-	
+	let close = document.querySelectorAll('.close-icon');
 
-	$(document).ready(function() {
+	$(document).ready(function () {
 		// Events
 		$('.btn-res').click(() => {
-			getRestaurant(); 	
+			getRestaurant();
 		});
 
 		$('.profile').click(() => {
@@ -55,12 +55,16 @@ function initMap() {
 			hide();
 		});
 
+		$('.btn-choose').click(() => {
+			show();
+		});
 
 
-	close.onclick = hide();	
-	// profile.onclick = show();
 
-		
+		close.onclick = hide();
+		// profile.onclick = show();
+
+
 		// Functions
 		function getRestaurant() {
 			let query = $('.search__field').val();
@@ -96,12 +100,27 @@ function initMap() {
 		}
 
 		function show() {
-			document.getElementById('window-log').style.display = "block";
+			let windowLog = document.getElementById('window-log');
+				let windowChoose = document.getElementById('window-choose');
+
+			windowChoose.style.display = 'block';
+			windowLog.style.display = "block";
+
+		}
+
+		for (let i = 0; i < close.length; i++) {
+			close[i].onclick = hide();
 		}
 
 		function hide() {
-			
-			document.getElementById('window-log').style.display = "none";
+
+
+
+			let windowLog = document.getElementById('window-log');
+			let windowChoose = document.getElementById('window-choose');
+
+			windowLog.style.display = "none";
+			windowChoose.style.display = "none";
 		}
 	});
 })(jQuery);
