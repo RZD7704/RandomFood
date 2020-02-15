@@ -139,5 +139,29 @@ p {
     height: 30px;
     border-radius: 15px;
     width: 95%;
-    margin-right: 90px;
+    // margin-right: 90px;
+    padding-left: 70px;
+}
+
+// BURGER MENU
+
+#qqq.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #FC9908 !important;
+}
+
+.navbar-toggler {
+    border-color: #FC9908 !important;
+}
+
+.navbar-toggler:focus.navbar-toggler:hover.navbar-toggler:active {
+    border-color: #FC9908 !important;
+}
+
+// .navbar-toggler {
+//     color: #FC9908;
+// }
+
+.navbar-nav {
+    background-color: red;
+    margin-top: 10px;
 }
