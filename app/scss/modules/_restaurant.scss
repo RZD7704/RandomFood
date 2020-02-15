@@ -1,10 +1,21 @@
 .restaurant--h1 {
+    @media (min-width: 900px) {
+        padding-top: 100px;
+    }
+
     font-size: 22px;
     color: #fff;
     text-align: center;
-    margin-top: 20px;
+    // margin-top: 20px;
+    padding-top: 155px;
 }
 
 .restaurants {
     height: 375px;
+}
+
+.btn-choose-random {
+    @media (min-width: 900px) {
+    margin-top: 65px;
+    }
 }
