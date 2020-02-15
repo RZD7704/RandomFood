@@ -48,7 +48,7 @@ function initMap() {
 		});
 
 		$('.profile').click(() => {
-			show();
+			showLog();
 		});
 
 		$('.close-icon').click(() => {
@@ -56,12 +56,12 @@ function initMap() {
 		});
 
 		$('.btn-choose').click(() => {
-			show();
+			showChoose();
 		});
 
 
 
-		close.onclick = hide();
+		// close.onclick = hide();
 		// profile.onclick = show();
 
 
@@ -99,13 +99,15 @@ function initMap() {
 			}
 		}
 
-		function show() {
+		function showLog() {
 			let windowLog = document.getElementById('window-log');
-				let windowChoose = document.getElementById('window-choose');
-
-			windowChoose.style.display = 'block';
 			windowLog.style.display = "block";
 
+		}
+
+		function showChoose() {
+			let windowChoose = document.getElementById('window-choose');
+			windowChoose.style.display = 'block';
 		}
 
 		for (let i = 0; i < close.length; i++) {
