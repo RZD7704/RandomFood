@@ -124,7 +124,8 @@ html {
       z-index: 2; } }
 
 .header {
-  position: absolute;
+  z-index: 999;
+  position: fixed;
   width: 100%;
   background: #474B5D; }
   @media (min-width: 900px) {
@@ -684,3 +685,52 @@ svg.icon.main-logo__icon {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between; }
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden; }
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 63px;
+  z-index: 99;
+  width: 30%;
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background-color: #474B5D; }
+  @media (max-width: 900px) {
+    .menu {
+      width: 100%;
+      top: 130px; } }
+
+.menu_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%); }
+
+.menu-list {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-top: 15px; }
+
+.menu-list a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #F2E7FE;
+  padding-bottom: 20px; }

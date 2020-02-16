@@ -12,7 +12,8 @@
 }
 
 .header {
-    position: absolute;
+    z-index: 999;
+    position: fixed;
     width: 100%;
 
     background: #474B5D;
