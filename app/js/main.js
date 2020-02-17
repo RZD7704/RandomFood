@@ -42,6 +42,13 @@ function initMap() {
 	let close = document.querySelectorAll('.close-icon');
 
 	$(document).ready(function () {
+		// Burger menu
+		$('.menu-btn').on('click', function(e) {
+			e.preventDefault();
+			$('.menu').toggleClass('menu_active');
+			$('.content').toggleClass('content_active');
+		});
+
 		// Events
 		$('.btn-res').click(() => {
 			getRestaurant();
