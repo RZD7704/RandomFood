@@ -2,8 +2,6 @@
 const SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood';
 
 let map;
-let btnNext = document.querySelector('.btn-choose-next');
-
 function initMap() {
 	let map, coords, styles, marker, info, content;
 
@@ -42,6 +40,14 @@ function initMap() {
 	let close = document.querySelectorAll('.close-icon');
 
 	$(document).ready(function () {
+		// Burger menu
+		$('.menu-btn').on('click', function(e) {
+			e.preventDefault();
+			$('.menu').toggleClass('menu_active');
+			$('.content').toggleClass('content_active');
+		  })
+
+
 		// Events
 		$('.btn-res').click(() => {
 			getRestaurant();
