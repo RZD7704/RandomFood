@@ -602,7 +602,6 @@ svg.icon.main-logo__icon {
   border: 1px solid #fff;
   border-radius: 0;
   z-index: 150;
-  display: none;
   position: fixed;
   left: 0;
   right: 0;

@@ -2,6 +2,8 @@
 const SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood';
 
 let map;
+let btnNext = document.querySelector('.btn-choose-next');
+
 function initMap() {
 	let map, coords, styles, marker, info, content;
 
@@ -47,7 +49,6 @@ function initMap() {
 			$('.content').toggleClass('content_active');
 		});
 
-
 		// Events
 		$('.btn-res').click(() => {
 			getRestaurant();
@@ -63,6 +64,10 @@ function initMap() {
 
 		$('.btn-choose').click(() => {
 			showChoose();
+		});
+
+		$(btnNext).click(() => {
+			chooseNext();
 		});
 
 
@@ -121,14 +126,46 @@ function initMap() {
 		}
 
 		function hide() {
-
-
-
 			let windowLog = document.getElementById('window-log');
 			let windowChoose = document.getElementById('window-choose');
 
 			windowLog.style.display = "none";
 			windowChoose.style.display = "none";
 		}
+
+		function chooseNext() {
+
+			let numPeople = document.querySelector('.count-people').value,
+				dishes = document.querySelectorAll('.dishes'),
+				kindOfFood = document.querySelectorAll('.food'),
+				drink = dishes[2].checked,
+				desert = dishes[1].checked,
+				main = dishes[0].checked,
+				any = kindOfFood[0].checked,
+				europe = kindOfFood[1].checked,
+				asia = kindOfFood[2].checked,
+				ukraine = kindOfFood[3].checked;
+
+			for (let i = 0; i < dishes.length; i++) {
+				if (dishes[i].checked) {
+					localStorage.setItem('main', main);
+					localStorage.setItem('desert', desert);
+					localStorage.setItem('drink', drink);
+				}
+			}
+
+			for (let k = 0; k < kindOfFood.length; k++) {
+				if (kindOfFood[k].checked) {
+					localStorage.setItem('any-food', any);
+					localStorage.setItem('europe-food', europe);
+					localStorage.setItem('asia-food', asia);
+					localStorage.setItem('ukraine-food', ukraine);
+				}
+
+			}
+
+			localStorage.setItem('numPeople', numPeople);
+		}
+
 	});
 })(jQuery);
