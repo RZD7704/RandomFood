@@ -45,7 +45,7 @@ function initMap() {
 			e.preventDefault();
 			$('.menu').toggleClass('menu_active');
 			$('.content').toggleClass('content_active');
-		  })
+		});
 
 
 		// Events
