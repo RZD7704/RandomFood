@@ -610,6 +610,9 @@ svg.icon.main-logo__icon {
   right: 0;
   top: 0;
   bottom: 0; }
+  @media (max-height: 700px) {
+    #window-choose {
+      margin: 80px auto; } }
 
 .form__h1 {
   font-size: 24px;
