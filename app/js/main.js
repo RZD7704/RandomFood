@@ -1,5 +1,4 @@
 'use strict';
-const SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood';
 
 let map;
 let btnNext = document.querySelector('.btn-choose-next');
@@ -41,6 +40,10 @@ function initMap() {
 (function ($) {
 	//variables
 	let close = document.querySelectorAll('.close-icon');
+	let SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood',
+		$restaurants = [];
+
+
 
 	$(document).ready(function () {
 		// Burger menu
@@ -84,6 +87,32 @@ function initMap() {
 
 
 		// Functions
+		if (window.location.href.indexOf('/restaurant.html')) {
+			$.ajax({
+				url: `${SERVER_URL}/restaurants`,
+				type: 'GET'
+			}).then((data) => {
+				$restaurants = data;
+				// TODO: draw elements restaurant
+				$restaurants.forEach((restaurant) => {
+					$('.restaurants').append(drawRestaurant(restaurant)); 
+				});
+			});
+		}
+		
+	
+		function drawRestaurant(restaurants) {
+			let restaurantDOM = `<div class="link__div"
+									<a href="${menus}.html" class="link__res" data-id="${restaurants.id}">
+										<img src="${restaurants.logo}" class="link__img">
+										<div class="link__name">
+											<h1 class="link__h1">${restaurants.name}</h1>
+										</div>
+									</a>
+								</div>`;
+	
+			return restaurantDOM;
+		}
 
 
 		function showLog() {
