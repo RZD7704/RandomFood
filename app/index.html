@@ -74,7 +74,7 @@
         </div>
       </div>
     </header>
-    <section class="main">
+    <section class="main" id="main">
       <div class="container">
         <div class="main-info wrapper">
 
@@ -250,11 +250,11 @@
           <form action="index.html" name="f1">
             <input type="submit" value="Google" name="sab" class="input input__networks" />
             <input type="submit" value="Facebook" name="sab" class="input input__networks" />
-            <input type="email" placeholder="Email" name="email" class="input input__fields" />
-            <input type="tel" placeholder="Мобильный телефон" name="tel"
-              class="input input__fields input__fields-last" />
-            <input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last" />
-            <div class="button input__button">
+            <input type="email" id="reg-user" placeholder="Email" name="email" class="input input__fields reg-user" />
+            <input type="tel" id="reg-tel" placeholder="Мобильный телефон" name="tel"
+              class="input input__fields input__fields-last reg-tel" />
+            <input type="password" id="reg-password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last reg-password" />
+            <div class="button input__button btn-reg">
               <a href="#">
                 <div class="btn input__btn">Вход</div>
               </a>
@@ -288,7 +288,7 @@
             </p>
           </div>
           <form action="index.html" name="f1">
-            <div class="button input__btn-1">
+            <div class="button input__btn-1 btn-go-main">
               <a href="#">
                 <div class="btn input__btn">НА ГЛАВНУЮ</div>
               </a>

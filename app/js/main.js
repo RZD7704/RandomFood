@@ -72,15 +72,9 @@ function initMap() {
 		});
 
 		$('.input__btn-reg').click(() => {
-			registration();
+			goToReg();
 		});
 
-		
-
-
-
-		// close.onclick = hide();
-		// profile.onclick = show();
 
 
 		// Functions
@@ -104,9 +98,11 @@ function initMap() {
 		function hide() {
 			let windowLog = document.getElementById('window-log');
 			let windowChoose = document.getElementById('window-choose');
+			let windowReg = document.getElementById('window-reg');
 
 			windowLog.style.display = "none";
 			windowChoose.style.display = "none";
+			windowReg.style.display = 'none';
 		}
 
 		function chooseNext() {
@@ -143,15 +139,13 @@ function initMap() {
 			localStorage.setItem('numPeople', numPeople);
 		}
 
-		function registration() {
-			let login = document.querySelector('.login').value,
-				password = document.querySelector('.password').value;
-				
-
-			localStorage.setItem('login', login);
-			localStorage.setItem('password', password);
-
+		function goToReg() {
+			hide();
+			let windowReg = document.getElementById('window-reg');
+			windowReg.style.display = 'block';
 		}
+
+		
 
 	});
 })(jQuery);

@@ -57,6 +57,17 @@
         //     document.body.className = 'success';
         //});
 
+        //ivents
+        $('.btn-reg').click(() => {
+            registration();
+            showEndMessage();
+        });
+        
+        $('.btn-go-main').click(() => {
+            hide();
+        });
+
+
         //Validate user
         $('.input__btn-entry').click(function () {
             let username = $('#username').val(),
@@ -106,11 +117,34 @@
         }
         function hide() {
 			let windowLog = document.getElementById('window-log');
-			let windowChoose = document.getElementById('window-choose');
+            let windowChoose = document.getElementById('window-choose');
+            let windowReg = document.getElementById('window-reg');
+            let windowRegEnd = document.getElementById('window-reg-end');
 
 			windowLog.style.display = "none";
-			windowChoose.style.display = "none";
-		}
+            windowChoose.style.display = "none";
+            windowReg.style.display = "none";
+            windowRegEnd.style.display = 'none';
+        }
+        
+        function registration() {
+			let login = document.querySelector('.reg-user').value,
+                password = document.querySelector('.reg-password').value,
+                tel = document.querySelector('.reg-tel').value;
+				
+
+			localStorage.setItem('login', login);
+            localStorage.setItem('password', password);
+            localStorage.setItem('telephone', tel);
+            hide();
+        }
+        
+        function showEndMessage() {
+            let windowRegEnd = document.getElementById('window-reg-end');
+
+            windowRegEnd.style.display = 'block';
+            
+        }
 
         // function showWarningMessage(message) {
         //     $('<div/>').addClass('dialog-overlay')
