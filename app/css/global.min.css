@@ -546,6 +546,9 @@ svg.icon.main-logo__icon {
   .input__btn-2 {
     margin-top: 15px; }
 
+.login__error {
+  color: red; }
+
 #window-reg {
   width: 335px;
   height: 565px;
@@ -733,3 +736,41 @@ svg.icon.main-logo__icon {
   text-transform: uppercase;
   color: #F2E7FE;
   padding-bottom: 20px; }
+
+.dialog-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+
+.dialog {
+  width: 500px;
+  padding: 30px 50px;
+  background: #fff;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: window .5s 1;
+          animation: window .5s 1;
+  z-index: 9; }
+
+@-webkit-keyframes window {
+  0% {
+    top: -100px; }
+  100% {
+    top: 50px; } }
+
+@keyframes window {
+  0% {
+    top: -100px; }
+  100% {
+    top: 50px; } }

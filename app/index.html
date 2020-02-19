@@ -199,9 +199,6 @@
         </div>
       </div>
 
-      <!-- Задний прозрачный фон -->
-      <!-- <div onclick="show('none')" id="gray"></div> -->
-
       <!-- LOG REG REG-END-->
       <div id="window-log" name="window">
         <!-- Картинка крестика -->
@@ -221,16 +218,16 @@
           <form action="index.html" name="f1">
             <input type="submit" value="Google" name="sab" class="input input__networks" />
             <input type="submit" value="Facebook" name="sab" class="input input__networks" />
-            <input type="email" placeholder="Email" name="email" class="input input__fields" />
-            <input type="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last" />
-            <div class="button input__btn-1">
+            <input type="email" id="username" placeholder="Email" name="email" class="input input__fields login" />
+            <input type="password" id="password" placeholder="Пароль" name="pass1" class="input input__fields input__fields-last password" />
+            <div class="button input__btn-entry">
               <a href="#">
                 <div class="btn input__btn">Вход</div>
               </a>
             </div>
             <div class="button">
               <a href="#">
-                <div class="btn input__btn input__btn-2">Регистрация</div>
+                <div class="btn input__btn input__btn-reg">Регистрация</div>
               </a>
             </div>
           </form>
@@ -437,6 +434,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
     async defer></script>
   <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
   <!--endbuild-->
 </body>
 
