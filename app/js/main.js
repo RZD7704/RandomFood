@@ -77,38 +77,7 @@ function initMap() {
 
 
 		// Functions
-		function getRestaurant() {
-			let query = $('.search__field').val();
 
-			if (query !== '') {
-				$('body').addClass('loading');
-				$('.movie').remove();
-
-				$.ajax({
-					url: `${API_URL}/search/movie`,
-					type: 'GET',
-					data: {
-						api_key: API_KEY,
-						query: query
-					}
-				}).then((res) => {
-					if (res.results.length === 0) {
-						alert('No movies found with your search');
-					} else {
-						res.results.forEach((movie) => {
-							if (movie.poster_path !== null) {
-								$('.movies').append(drawMovie(movie));
-							}
-						});
-					}
-
-					$('body').removeClass('loading');
-				});
-
-			} else {
-				alert('Please, fill the search')
-			}
-		}
 
 		function showLog() {
 			let windowLog = document.getElementById('window-log');
