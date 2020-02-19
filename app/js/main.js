@@ -94,19 +94,19 @@ function initMap() {
 			}).then((data) => {
 				$restaurants = data;
 				// TODO: draw elements restaurant
-				$restaurants.forEach((restaurant) => {
-					$('.restaurants').append(drawRestaurant(restaurant)); 
+				$restaurants.forEach((resto) => {
+					$('.restaurants').append(drawRestaurant(resto)); 
 				});
 			});
 		}
 		
 	
-		function drawRestaurant(restaurants) {
+		function drawRestaurant(resto) {
 			let restaurantDOM = `<div class="link__div"
-									<a href="${menus}.html" class="link__res" data-id="${restaurants.id}">
-										<img src="${restaurants.logo}" class="link__img">
+									<a href="menus.html" class="link__res" data-id="${resto.id}">
+										<img src="${resto.logo}" class="link__img">
 										<div class="link__name">
-											<h1 class="link__h1">${restaurants.name}</h1>
+											<h1 class="link__h1">${resto.name}</h1>
 										</div>
 									</a>
 								</div>`;
