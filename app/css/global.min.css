@@ -463,7 +463,13 @@ svg.icon.main-logo__icon {
       padding-top: 100px; } }
 
 .restaurants {
-  height: 375px; }
+  height: 375px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center; }
 
 @media (min-width: 900px) {
   .btn-choose-random {

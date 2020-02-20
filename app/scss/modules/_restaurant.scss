@@ -12,6 +12,9 @@
 
 .restaurants {
     height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-choose-random {
