@@ -8,6 +8,12 @@
     align-items: center;
     padding: 15px 0;
     margin: 60px 0 10px 0;
+    position: fixed; 
+    left: 0; bottom: 0;
+    padding: 10px; 
+    background: var(--orange);;
+    color: #fff;
+    width: 100%;
 
     &__text--p {
         display: block;
@@ -27,6 +33,7 @@
         // margin-left: 20%;
         display: flex;
         align-items: center;
+        margin-right: 20px;
     }
 
     &__links--ul {

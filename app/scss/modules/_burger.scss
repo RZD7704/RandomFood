@@ -6,6 +6,8 @@
     @media (max-width: 900px) {
         width: 100%;
         top: 130px;
+        justify-content: center;
+        text-align: center;
     }
 
     position: fixed;
@@ -26,6 +28,12 @@
     transform: translateX(0%);
   }
   .menu-list {
+    @media (max-width: 900px) {
+      margin-top: 0;
+      margin-left: 0;
+  }
+
+
     display: flex;
     justify-content: space-around;
     // align-items: center;
