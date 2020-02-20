@@ -78,7 +78,9 @@ function initMap() {
 			goToReg();
 		});
 
-
+		$('.btn-choose-random').click(() => {
+			randomRestor();
+		})
 
 		// Functions
 		if (window.location.href.indexOf('/restaurant.html')) {
@@ -104,7 +106,7 @@ function initMap() {
 										</div>
 									</a>
 								</div>`;
-			
+
 			return restaurantDOM;
 		}
 
@@ -175,7 +177,15 @@ function initMap() {
 			windowReg.style.display = 'block';
 		}
 
+		//random restaurants
+		function randomRestor() {
+			let rest = document.querySelectorAll('.link__div');
 
+			let element = Math.floor(Math.random() * rest.length);
+			console.log(element);
+
+
+		}
 
 	});
 })(jQuery);
