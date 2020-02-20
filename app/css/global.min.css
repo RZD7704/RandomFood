@@ -557,6 +557,12 @@ svg.icon.main-logo__icon {
 .login__error {
   color: red; }
 
+.link__h1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
 #window-reg {
   width: 335px;
   height: 565px;
