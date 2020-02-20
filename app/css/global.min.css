@@ -304,6 +304,14 @@ svg.icon.main-logo__icon {
   .text-hide {
     display: none; } }
 
+.link__h1 {
+  color: white; }
+
+.restaurants {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around; }
+
 .stock {
   background: #474B5D; }
   @media (min-width: 900px) {

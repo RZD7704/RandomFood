@@ -89,12 +89,12 @@ function initMap() {
 				$restaurants = data;
 				// TODO: draw elements restaurant
 				$restaurants.forEach((resto) => {
-					$('.restaurants').append(drawRestaurant(resto)); 
+					$('.restaurants').append(drawRestaurant(resto));
 				});
 			});
 		}
-		
-	
+
+
 		function drawRestaurant(resto) {
 			let restaurantDOM = `<div class="link__div"
 									<a href="menus.html" class="link__res" data-id="${resto.id}">
@@ -104,7 +104,7 @@ function initMap() {
 										</div>
 									</a>
 								</div>`;
-	
+			
 			return restaurantDOM;
 		}
 
@@ -136,7 +136,7 @@ function initMap() {
 
 		function chooseNext() {
 
-			let numPeople = document.querySelector('.count-people').value,
+			let numPeople = $('.count-people').val(),
 				dishes = document.querySelectorAll('.dishes'),
 				kindOfFood = document.querySelectorAll('.food'),
 				drink = dishes[2].checked,
@@ -162,8 +162,9 @@ function initMap() {
 					localStorage.setItem('asia-food', asia);
 					localStorage.setItem('ukraine-food', ukraine);
 				}
-
 			}
+
+
 
 			localStorage.setItem('numPeople', numPeople);
 		}
@@ -174,7 +175,7 @@ function initMap() {
 			windowReg.style.display = 'block';
 		}
 
-		
+
 
 	});
 })(jQuery);
