@@ -72,6 +72,11 @@
     background-color: inherit;
     fill: white;
     // margin-top: 10px;
+
+    &:hover {
+        fill: #D9DDDC;
+        transition: all .3s;
+    }
 }
 
 .burger-icon {

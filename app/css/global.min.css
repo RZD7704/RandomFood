@@ -173,6 +173,10 @@ html {
   height: 32px;
   background-color: inherit;
   fill: white; }
+  .icon:hover {
+    fill: #D9DDDC;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
 
 .burger-icon {
   margin-top: 10px;
@@ -429,7 +433,7 @@ svg.icon.main-logo__icon {
           align-items: center;
   padding: 15px 0;
   margin: 60px 0 10px 0;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   padding: 10px;
@@ -808,3 +812,7 @@ svg.icon.main-logo__icon {
     top: -100px; }
   100% {
     top: 50px; } }
+
+.btn:hover {
+  background-color: #FC9908;
+  color: #fff; }

@@ -41,8 +41,9 @@ function initMap() {
 	//variables
 	let close = document.querySelectorAll('.close-icon');
 	let SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood',
-		$restaurants = [];
-
+		$restaurants = [],
+		$menus = [];
+		
 
 
 	$(document).ready(function () {
@@ -110,6 +111,32 @@ function initMap() {
 			return restaurantDOM;
 		}
 
+
+		if (window.location.href.indexOf('/menu.html')) {
+			$.ajax({
+				url: `${SERVER_URL}/menus`,
+				type: 'GET'
+			}).then((data) => {
+				$menus = data;
+				// TODO: draw elements restaurant
+				$menus.forEach((menu) => {
+					$('.menus').append(drawMenu(menu));
+				});
+			});
+		}
+
+		function drawMenu(menu) {
+			let menuDOM = `<div class="link__div"
+									<a href="menus.html" class="link__res" data-id="${menu.id}">
+										<img src="${menu.logo}" class="link__img">
+										<div class="link__name">
+											<h1 class="link__h1">${menu.name}</h1>
+										</div>
+									</a>
+								</div>`;
+
+			return menuDOM;
+		}
 
 		function showLog() {
 			let windowLog = document.getElementById('window-log');
