@@ -98,8 +98,8 @@ function initMap() {
 				$restaurants = data;
 				// TODO: draw elements restaurant
 				$restaurants.forEach((resto, index) => {
-					let restaurantsList = $('.restaurants');
-					restaurantsList.append(drawItem(resto, 'menu.html'));
+					let restaurantsList = $('.restaurants'); //масив ресторанов
+					restaurantsList.append(drawItem(resto, 'menu.html')); 
 					console.log(restaurantsList);
 					
 					restaurantsList[0].children[index].onclick = () => openMenu(index);
@@ -141,8 +141,6 @@ function initMap() {
 		}
 
 
-
-	
 
 		function showLog() {
 			let windowLog = document.getElementById('window-log');
@@ -213,7 +211,6 @@ function initMap() {
 		//random restaurants
 		function openMenu(restIndex) {
 			console.log(restIndex);
-
 			localStorage.setItem('randomRestIndex', restIndex);
 			window.location.pathname = '/menu.html'
 		}
