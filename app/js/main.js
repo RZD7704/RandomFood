@@ -48,7 +48,16 @@ function initMap() {
 
 
 	$(document).ready(function () {
-		
+		// SLIDER
+		$('.sl').slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			autoplay: true,
+			// autoplaySpeed: 2000,
+			dots: true
+		});
+
+
 		// Burger menu
 		$('.menu-btn').on('click', function (e) {
 			e.preventDefault();
@@ -81,9 +90,16 @@ function initMap() {
 			goToReg();
 		});
 
-		$('.btn-choose-random').click(() => {
-			openRandomMenu();
-		})
+		$('.btn__end').click(() => {
+			showEnd();
+		});
+
+
+
+		// $('.carousel-content').slick({
+		// 	nextArrow:"<img class='a-right control-c next slick-next' src='../images/shoe_story/arrow-right.png'>"
+		// });
+
 
 		// $('.btn-choose-random').click(() => {
 		// 	openMenu();
@@ -142,7 +158,11 @@ function initMap() {
 
 
 
-	
+		function showEnd() {
+			let endLog = document.getElementById('window-end');
+			endLog.style.display = "block";
+
+		}
 
 		function showLog() {
 			let windowLog = document.getElementById('window-log');
