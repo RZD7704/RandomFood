@@ -33,7 +33,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  position: relative; }
 
 ol, ul {
   list-style: none; }
@@ -63,7 +64,6 @@ html {
 
 body,
 html {
-  min-height: 100%;
   width: 100%;
   background-color: #474B5D;
   font-family: "Roboto", sans-serif; }
@@ -174,7 +174,8 @@ html {
   background-color: inherit;
   fill: white; }
   .icon:hover {
-    fill: #D9DDDC;
+    fill: #454D5B;
+    opacity: 0.5;
     -webkit-transition: all .3s;
     transition: all .3s; }
 
@@ -302,7 +303,7 @@ p {
 svg.icon.main-logo__icon {
   width: 250px;
   height: auto;
-  margin-top: 105px; }
+  margin-top: 195px; }
 
 @media (min-width: 900px) {
   .text-hide {
@@ -378,13 +379,16 @@ svg.icon.main-logo__icon {
   font-size: 14px; }
 
 .contacts {
-  background: #474B5D; }
+  background: #474B5D;
+  position: relative; }
   @media (min-width: 900px) {
     .contacts__devide {
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
-              align-items: center; } }
+              align-items: center;
+      -webkit-box-pack: justify;
+              justify-content: space-between; } }
   .contacts__text--h1 {
     font-size: 22px;
     font-weight: 500;
@@ -404,7 +408,7 @@ svg.icon.main-logo__icon {
         margin-top: 25px; } }
   .contacts__devide--p {
     font-size: 16px;
-    padding: 10px; }
+    margin-left: 10px; }
   .contacts__devide--block {
     display: block;
     display: -webkit-box;
@@ -438,7 +442,7 @@ svg.icon.main-logo__icon {
   margin: 60px 0 10px 0;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -200px;
   padding: 10px;
   background: var(--orange);
   color: #fff;
@@ -488,6 +492,9 @@ svg.icon.main-logo__icon {
 @media (min-width: 900px) {
   .btn-choose-random {
     margin-top: 65px; } }
+
+.cover {
+  position: relative; }
 
 #window-log {
   width: 335px;
@@ -821,7 +828,9 @@ svg.icon.main-logo__icon {
   color: #fff; }
 
 .link__img {
-  width: 80px; }
+  display: block;
+  max-width: 120px;
+  height: auto; }
 
 .menus {
   height: 375px;
@@ -829,5 +838,13 @@ svg.icon.main-logo__icon {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  justify-content: space-around;
-  margin-top: 70px; }
+  justify-content: space-around; }
+  .menus__h1 {
+    font-size: 36px;
+    line-height: 28px;
+    color: #F2E7FE;
+    text-align: center;
+    margin-top: 120px; }
+    @media (max-width: 900px) {
+      .menus__h1 {
+        margin-top: 160px; } }
