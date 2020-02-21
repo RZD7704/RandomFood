@@ -9,31 +9,82 @@
                     "id": "menu-1",
                     "name": "Пицца",
                     "logo": "images/menu/pizza-img.jpg",
-                    "restoId": "resto-1"
+                    "restoId": "resto-1",
+                    "dishes": [
+                        {
+                            "id": "dish-1",
+                            "name": "Пицца Маргарита",
+                            "info": "Фирменный томатный соус с базиликом, помидоры, двойная порция сыра Моцареллы, орегано.",
+                            "price": "130.00",
+                            "img": "images/dish/garrys-margo-pizza.jpg",
+                            "menuId": "menu-1"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-2",
                     "name": "БУРГЕРЫ",
                     "logo": "images/menu/burger-img.jpg",
-                    "restoId": "resto-1"
+                    "restoId": "resto-1",
+                    "dishes": [
+                        {
+                            "id": "dish-4",
+                            "name": "Чизбургер",
+                            "info": "Булочка с кунжутом, котлета из говядины, лист салата, маринованный огурец, сыр Чеддер, соус Барбекю с трюфельным маслом.",
+                            "price": "85.00",
+                            "img": "images/dish/garrys-burg-chees.jpg",
+                            "menuId": "menu-2"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-3",
                     "name": "ДЕСЕРТЫ",
                     "logo": "images/menu/deserts.jpg",
-                    "restoId": "resto-1"
+                    "restoId": "resto-1",
+                    "dishes": [
+                        {
+                            "id": "dish-7",
+                            "name": "Шоколадный фондан",
+                            "info": "Шоколадный кекс с жидким шоколадом внутри.",
+                            "price": "40.00",
+                            "img": "images/dish/garrys-shok-dessert.jpg",
+                            "menuId": "menu-3"
+                        }
+                    ]
+                    
                 },
                 {
                     "id": "menu-4",
                     "name": "НАПИТКИ",
                     "logo": "images/menu/drinks-img.jpg",
-                    "restoId": "resto-1"
+                    "restoId": "resto-1",
+                    "dishes": [
+                        {
+                            "id": "dish-10",
+                            "name": "Напиток Pepsi-Cola",
+                            "info": "Pepsi-Cola",
+                            "price": "25.00",
+                            "img": "images/dish/garrys-pepsi-drinks.jpg",
+                            "menuId": "menu-4"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-5",
                     "name": "АЛКОГОЛЬ",
                     "logo": "images/menu/alko-img.jpg",
-                    "restoId": "resto-1"
+                    "restoId": "resto-1",
+                    "dishes": [
+                        {
+                            "id": "dish-13",
+                            "name": "CRAFTERS ДЖИН LONDON DRY 0,7Л",
+                            "info": "CRAFTERS ДЖИН LONDON",
+                            "price": "629.00",
+                            "img": "images/dish/garrys-gine-alko.jpg",
+                            "menuId": "menu-5"
+                        }
+                    ]
                 }
             ]
         },
@@ -46,31 +97,81 @@
                     "id": "menu-6",
                     "name": "WOK",
                     "logo": "images/menu/lapsha-logo.png",
-                    "restoId": "resto-2"
+                    "restoId": "resto-2",
+                    "dishes": [
+                        {
+                            "id": "dish-2",
+                            "name": "ЛАПША СОБА (ГРЕЧНЕВАЯ) С ТУНЦОМ В СОУСЕ ТЕРИЯКИ",
+                            "info": "лапша соба, микс овощей, кунжут белый, лук порей, тунец, соус терияки, соевый соус.",
+                            "price": "94.00",
+                            "img": "images/dish/wok.png",
+                            "menuId": "menu-1"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-7",
                     "name": "Суши",
                     "logo": "images/menu/sushi-logo.png",
-                    "restoId": "resto-2"
+                    "restoId": "resto-2",
+                    "dishes": [
+                        {
+                            "id": "dish-5",
+                            "name": "РОЛЛ DELUX СО СНЕЖНЫМ КРАБОМ",
+                            "info": "Лосось: 120 г. Нори, Рис, Снежный краб, Лосось, Икра Тобика, Соус Спайс, Огурец, Авокадо, Икра Лосося, Микрогрин.",
+                            "price": "170.00",
+                            "img": "images/dish/roll.png",
+                            "menuId": "menu-2"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-8",
                     "name": "Дессерты",
                     "logo": "images/menu/sup-logo.png",
-                    "restoId": "resto-2"
+                    "restoId": "resto-2",
+                    "dishes": [
+                        {
+                            "id": "dish-8",
+                            "name": "Чизкейк Вишневый",
+                            "info": "Сливочный сыр, песочное печенье, вишня.",
+                            "price": "55.00",
+                            "img": "images/dish/garrys-cherry-dessert.jpg",
+                            "menuId": "menu-3"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-9",
                     "name": "Напитки",
                     "logo": "images/menu/drinks-img.jpg",
-                    "restoId": "resto-2"
+                    "restoId": "resto-2",
+                    "dishes": [
+                        {
+                            "id": "dish-11",
+                            "name": "Напиток Mirinda",
+                            "info": "Mirinda",
+                            "price": "25.00",
+                            "img": "images/dish/garrys-mirinda-drinks.jpg",
+                            "menuId": "menu-4"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-10",
                     "name": "Алкоголь",
                     "logo": "images/menu/alko-img.jpg",
-                    "restoId": "resto-2"
+                    "restoId": "resto-2",
+                    "dishes": [
+                        {
+                            "id": "dish-14",
+                            "name": "К.ТРУБЕЦЬКИЙ ПЕРЛИНА СТЕПУ Б/С 0,75Л",
+                            "info": "К.ТРУБЕЦЬКИЙ ПЕРЛИНА СТЕПУ",
+                            "price": "25.00",
+                            "img": "images/dish/garrys-vine-alko.jpg",
+                            "menuId": "menu-5"
+                        }
+                    ]
                 }
             ]
         },
@@ -83,150 +184,84 @@
                     "id": "menu-11",
                     "name": "Пицца",
                     "logo": "images/menu/dogs-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-3",
+                            "name": "Пицца Гавайская",
+                            "info": "Фирменный томатный соус с базиликом, ананасы, куриное филе, сыр Моцарелла.",
+                            "price": "150.00",
+                            "img": "images/dish/garrys-gavayska-pizza.jpg",
+                            "menuId": "menu-1"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-12",
                     "name": "БУРГЕРЫ",
                     "logo": "images/menu/salads-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-6",
+                            "name": "Чикен",
+                            "info": "Булочка с кунжутом, куриное филе в панировке, лист салата, помидор, огурец, сыр Чеддер, соус Барбекю с трюфельным маслом.",
+                            "price": "85.00",
+                            "img": "images/dish/garrys-burg-chicken.jpg",
+                            "menuId": "menu-2"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-13",
                     "name": "ДЕСЕРТЫ",
                     "logo": "images/menu/sups-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-9",
+                            "name": "Чизкейк Вишнёвый",
+                            "info": "Сливочный сыр, песочное печенье, вишня.",
+                            "price": "55.00",
+                            "img": "images/dish/garrys-cherry-dessert.jpg",
+                            "menuId": "menu-3"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-14",
                     "name": "НАПИТКИ",
                     "logo": "images/menu/drinks-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-12",
+                            "name": "Напиток 7 Up",
+                            "info": "7 Up",
+                            "price": "25.00",
+                            "img": "images/dish/garrys-7up-drinks.jpg",
+                            "menuId": "menu-4"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-15",
                     "name": "АЛКОГОЛЬ",
                     "logo": "images/menu/alko-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-15",
+                            "name": "SCOT.LEADER ВІСКІ 1Л",
+                            "info": "SCOT.LEADER",
+                            "price": "358.90",
+                            "img": "images/dish/garrys-viski-alko.jpg",
+                            "menuId": "menu-5"
+                        }
+                    ]
                 }
             ]
         }
-    ],
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    "old_menus": [
-        {
-            "id": "menu-1",
-            "name": "Пицца",
-            "logo": "images/menu/pizza-img.jpg",
-            "restoId": "resto-1"
-        },
-        {
-            "id": "menu-2",
-            "name": "БУРГЕРЫ",
-            "logo": "images/menu/burger-img.jpg",
-            "restoId": "resto-1"
-        },
-        {
-            "id": "menu-3",
-            "name": "ДЕСЕРТЫ",
-            "logo": "images/menu/deserts.jpg",
-            "restoId": "resto-1"
-        },
-        {
-            "id": "menu-4",
-            "name": "НАПИТКИ",
-            "logo": "images/menu/drinks-img.jpg",
-            "restoId": "resto-1"
-        },
-        {
-            "id": "menu-5",
-            "name": "АЛКОГОЛЬ",
-            "logo": "images/menu/alko-img.jpg",
-            "restoId": "resto-1"
-        },
-
-
-
-
-
-        { 
-            "id": "menu-6",
-            "name": "WOK",
-            "logo": "images/menu/lapsha-logo.png",
-            "restoId": "resto-2"
-        },
-        {
-            "id": "menu-7",
-            "name": "Суши",
-            "logo": "images/menu/sushi-logo.png",
-            "restoId": "resto-2"
-        },
-        {
-            "id": "menu-8",
-            "name": "Дессерты",
-            "logo": "images/menu/deserts.jpg",
-            "restoId": "resto-2"
-        },
-        {
-            "id": "menu-9",
-            "name": "Напитки",
-            "logo": "images/menu/drinks-img.jpg",
-            "restoId": "resto-2"
-        },
-        {
-            "id": "menu-10",
-            "name": "Алкоголь",
-            "logo": "images/menu/alko-img.jpg",
-            "restoId": "resto-2"
-        },
-
-
-
-
-        {
-            "id": "menu-11",
-            "name": "Пицца",
-            "logo": "images/menu/pizza-img.jpg",
-            "restoId": "resto-3"
-        },
-        {
-            "id": "menu-12",
-            "name": "БУРГЕРЫ",
-            "logo": "images/menu/burger-img.jpg",
-            "restoId": "resto-3"
-        },
-        {
-            "id": "menu-13",
-            "name": "ДЕСЕРТЫ",
-            "logo": "images/menu/deserts.jpg",
-            "restoId": "resto-3"
-        },
-        {
-            "id": "menu-14",
-            "name": "НАПИТКИ",
-            "logo": "images/menu/drinks-img.jpg",
-            "restoId": "resto-3"
-        },
-        {
-            "id": "menu-15",
-            "name": "АЛКОГОЛЬ",
-            "logo": "images/menu/alko-img.jpg",
-            "restoId": "resto-3"
-        }
-
     ]
+  
 }
