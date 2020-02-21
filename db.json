@@ -3,48 +3,159 @@
         {
             "id": "resto-1",
             "name": "Garrys",
-            "logo": "images/res/garrys.jpg"
+            "logo": "images/res/garrys.jpg",
+            "menus": [
+                {
+                    "id": "menu-1",
+                    "name": "Пицца",
+                    "logo": "images/menu/pizza-img.jpg",
+                    "restoId": "resto-1"
+                },
+                {
+                    "id": "menu-2",
+                    "name": "БУРГЕРЫ",
+                    "logo": "images/menu/burger-img.jpg",
+                    "restoId": "resto-1"
+                },
+                {
+                    "id": "menu-3",
+                    "name": "ДЕСЕРТЫ",
+                    "logo": "images/menu/deserts.jpg",
+                    "restoId": "resto-1"
+                },
+                {
+                    "id": "menu-4",
+                    "name": "НАПИТКИ",
+                    "logo": "images/menu/drinks-img.jpg",
+                    "restoId": "resto-1"
+                },
+                {
+                    "id": "menu-5",
+                    "name": "АЛКОГОЛЬ",
+                    "logo": "images/menu/alko-img.jpg",
+                    "restoId": "resto-1"
+                }
+            ]
         },
         {
             "id": "resto-2",
             "name": "Rice",
-            "logo": "images/res/rice.jpg"
+            "logo": "images/res/rice.jpg",
+            "menus": [
+                { 
+                    "id": "menu-6",
+                    "name": "WOK",
+                    "logo": "images/menu/lapsha-logo.png",
+                    "restoId": "resto-2"
+                },
+                {
+                    "id": "menu-7",
+                    "name": "Суши",
+                    "logo": "images/menu/sushi-logo.png",
+                    "restoId": "resto-2"
+                },
+                {
+                    "id": "menu-8",
+                    "name": "Дессерты",
+                    "logo": "images/menu/deserts.jpg",
+                    "restoId": "resto-2"
+                },
+                {
+                    "id": "menu-9",
+                    "name": "Напитки",
+                    "logo": "images/menu/drinks-img.jpg",
+                    "restoId": "resto-2"
+                },
+                {
+                    "id": "menu-10",
+                    "name": "Алкоголь",
+                    "logo": "images/menu/alko-img.jpg",
+                    "restoId": "resto-2"
+                }
+            ]
         },
         {
             "id": "resto-3",
             "name": "SHADE BURGER",
-            "logo": "images/res/shade.jpg"
+            "logo": "images/res/shade.jpg",
+            "menus": [
+                {
+                    "id": "menu-11",
+                    "name": "Пицца",
+                    "logo": "images/menu/pizza-img.jpg",
+                    "restoId": "resto-3"
+                },
+                {
+                    "id": "menu-12",
+                    "name": "БУРГЕРЫ",
+                    "logo": "images/menu/burger-img.jpg",
+                    "restoId": "resto-3"
+                },
+                {
+                    "id": "menu-13",
+                    "name": "ДЕСЕРТЫ",
+                    "logo": "images/menu/deserts.jpg",
+                    "restoId": "resto-3"
+                },
+                {
+                    "id": "menu-14",
+                    "name": "НАПИТКИ",
+                    "logo": "images/menu/drinks-img.jpg",
+                    "restoId": "resto-3"
+                },
+                {
+                    "id": "menu-15",
+                    "name": "АЛКОГОЛЬ",
+                    "logo": "images/menu/alko-img.jpg",
+                    "restoId": "resto-3"
+                }
+            ]
         }
     ],
-    "menus": [
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "old_menus": [
         {
             "id": "menu-1",
             "name": "Пицца",
-            "img": "images/menu/pizza-img.jpg",
+            "logo": "images/menu/pizza-img.jpg",
             "restoId": "resto-1"
         },
         {
             "id": "menu-2",
             "name": "БУРГЕРЫ",
-            "img": "images/menu/burger-img.jpg",
+            "logo": "images/menu/burger-img.jpg",
             "restoId": "resto-1"
         },
         {
             "id": "menu-3",
             "name": "ДЕСЕРТЫ",
-            "img": "images/menu/deserts.jpg",
+            "logo": "images/menu/deserts.jpg",
             "restoId": "resto-1"
         },
         {
             "id": "menu-4",
             "name": "НАПИТКИ",
-            "img": "images/menu/drinks-img.jpg",
+            "logo": "images/menu/drinks-img.jpg",
             "restoId": "resto-1"
         },
         {
             "id": "menu-5",
             "name": "АЛКОГОЛЬ",
-            "img": "images/menu/alko-img.jpg",
+            "logo": "images/menu/alko-img.jpg",
             "restoId": "resto-1"
         },
 
@@ -55,31 +166,31 @@
         { 
             "id": "menu-6",
             "name": "WOK",
-            "img": "images/menu/lapsha-logo.png",
+            "logo": "images/menu/lapsha-logo.png",
             "restoId": "resto-2"
         },
         {
             "id": "menu-7",
             "name": "Суши",
-            "img": "images/menu/sushi-logo.png",
+            "logo": "images/menu/sushi-logo.png",
             "restoId": "resto-2"
         },
         {
             "id": "menu-8",
             "name": "Дессерты",
-            "img": "images/menu/deserts.jpg",
+            "logo": "images/menu/deserts.jpg",
             "restoId": "resto-2"
         },
         {
             "id": "menu-9",
             "name": "Напитки",
-            "img": "images/menu/drinks-img.jpg",
+            "logo": "images/menu/drinks-img.jpg",
             "restoId": "resto-2"
         },
         {
             "id": "menu-10",
             "name": "Алкоголь",
-            "img": "images/menu/alko-img.jpg",
+            "logo": "images/menu/alko-img.jpg",
             "restoId": "resto-2"
         },
 
@@ -89,31 +200,31 @@
         {
             "id": "menu-11",
             "name": "Пицца",
-            "img": "images/menu/pizza-img.jpg",
+            "logo": "images/menu/pizza-img.jpg",
             "restoId": "resto-3"
         },
         {
             "id": "menu-12",
             "name": "БУРГЕРЫ",
-            "img": "images/menu/burger-img.jpg",
+            "logo": "images/menu/burger-img.jpg",
             "restoId": "resto-3"
         },
         {
             "id": "menu-13",
             "name": "ДЕСЕРТЫ",
-            "img": "images/menu/deserts.jpg",
+            "logo": "images/menu/deserts.jpg",
             "restoId": "resto-3"
         },
         {
             "id": "menu-14",
             "name": "НАПИТКИ",
-            "img": "images/menu/drinks-img.jpg",
+            "logo": "images/menu/drinks-img.jpg",
             "restoId": "resto-3"
         },
         {
             "id": "menu-15",
             "name": "АЛКОГОЛЬ",
-            "img": "images/menu/alko-img.jpg",
+            "logo": "images/menu/alko-img.jpg",
             "restoId": "resto-3"
         }
 

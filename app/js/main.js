@@ -41,12 +41,14 @@ function initMap() {
 	//variables
 	let close = document.querySelectorAll('.close-icon');
 	let SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood',
-		$restaurants = [],
-		$menus = [];
-		
+		$restaurants = [];
+
+	
+
 
 
 	$(document).ready(function () {
+		
 		// Burger menu
 		$('.menu-btn').on('click', function (e) {
 			e.preventDefault();
@@ -80,30 +82,57 @@ function initMap() {
 		});
 
 		$('.btn-choose-random').click(() => {
-			randomRestor();
+			openRandomMenu();
 		})
 
+		// $('.btn-choose-random').click(() => {
+		// 	openMenu();
+		// })
+
 		// Functions
-		if (window.location.href.indexOf('/restaurant.html')) {
+		if (window.location.pathname === '/restaurant.html') {
 			$.ajax({
 				url: `${SERVER_URL}/restaurants`,
 				type: 'GET'
 			}).then((data) => {
 				$restaurants = data;
 				// TODO: draw elements restaurant
-				$restaurants.forEach((resto) => {
-					$('.restaurants').append(drawRestaurant(resto));
+				$restaurants.forEach((resto, index) => {
+					let restaurantsList = $('.restaurants');
+					restaurantsList.append(drawItem(resto, 'menu.html'));
+					console.log(restaurantsList);
+					
+					restaurantsList[0].children[index].onclick = () => openMenu(index);
+
 				});
 			});
+		}else if (window.location.pathname === '/menu.html') {
+			$.ajax({
+				url: `${SERVER_URL}/restaurants`,
+				type: 'GET'
+			}).then((data) => {
+				$restaurants = data;
+				let index = localStorage.getItem('randomRestIndex');
+				console.log(index, $restaurants);
+				
+				// TODO: draw elements restaurant
+				$restaurants[+index].menus.forEach((menu) => {
+					$('.menus').append(drawItem(menu, 'order.html'));
+				});
+
+			});
 		}
+			
+		
 
 
-		function drawRestaurant(resto) {
+
+		function drawItem(item, redirectLink) {
 			let restaurantDOM = `<div class="link__div"
-									<a href="menus.html" class="link__res" data-id="${resto.id}">
-										<img src="${resto.logo}" class="link__img">
+									<a href="${redirectLink}" class="link__res" data-id="${item.id}">
+										<img src="${item.logo}" class="link__img">
 										<div class="link__name">
-											<h1 class="link__h1">${resto.name}</h1>
+											<h1 class="link__h1">${item.name}</h1>
 										</div>
 									</a>
 								</div>`;
@@ -205,13 +234,16 @@ function initMap() {
 		}
 
 		//random restaurants
-		function randomRestor() {
-			let rest = document.querySelectorAll('.link__div');
+		function openMenu(restIndex) {
+			console.log(restIndex);
 
-			let element = Math.floor(Math.random() * rest.length);
-			console.log(element);
+			localStorage.setItem('randomRestIndex', restIndex);
+			window.location.pathname = '/menu.html'
+		}
 
-
+		function openRandomMenu() {
+			let restIndex = Math.floor(Math.random() * $restaurants.length);
+			openMenu(restIndex);
 		}
 
 	});
