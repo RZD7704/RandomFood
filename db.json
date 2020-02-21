@@ -57,7 +57,7 @@
                 {
                     "id": "menu-8",
                     "name": "Дессерты",
-                    "logo": "images/menu/deserts.jpg",
+                    "logo": "images/menu/sup-logo.png",
                     "restoId": "resto-2"
                 },
                 {
@@ -82,19 +82,19 @@
                 {
                     "id": "menu-11",
                     "name": "Пицца",
-                    "logo": "images/menu/pizza-img.jpg",
+                    "logo": "images/menu/dogs-img.jpg",
                     "restoId": "resto-3"
                 },
                 {
                     "id": "menu-12",
                     "name": "БУРГЕРЫ",
-                    "logo": "images/menu/burger-img.jpg",
+                    "logo": "images/menu/salads-img.jpg",
                     "restoId": "resto-3"
                 },
                 {
                     "id": "menu-13",
                     "name": "ДЕСЕРТЫ",
-                    "logo": "images/menu/deserts.jpg",
+                    "logo": "images/menu/sups-img.jpg",
                     "restoId": "resto-3"
                 },
                 {

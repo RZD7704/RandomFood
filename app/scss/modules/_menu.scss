@@ -2,3 +2,26 @@
     background-color: #FC9908;
     color: #fff;
 }
+
+.link {
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+
+//     &__menu {
+//         display: block;
+        
+//     }
+
+    &__img {
+        width: 80px;
+    }
+}
+
+.menus {
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+}

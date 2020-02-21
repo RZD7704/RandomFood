@@ -433,7 +433,7 @@ svg.icon.main-logo__icon {
           align-items: center;
   padding: 15px 0;
   margin: 60px 0 10px 0;
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   padding: 10px;
@@ -816,3 +816,15 @@ svg.icon.main-logo__icon {
 .btn:hover {
   background-color: #FC9908;
   color: #fff; }
+
+.link__img {
+  width: 80px; }
+
+.menus {
+  height: 375px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-content: space-around;
+  margin-top: 70px; }
