@@ -184,31 +184,72 @@
                     "id": "menu-11",
                     "name": "Пицца",
                     "logo": "images/menu/dogs-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-3",
+                            "name": "Пицца Гавайская",
+                            "info": "Фирменный томатный соус с базиликом, ананасы, куриное филе, сыр Моцарелла.",
+                            "price": "150.00",
+                            "img": "images/dish/garrys-gavayska-pizza.jpg",
+                            "menuId": "menu-1"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-12",
                     "name": "БУРГЕРЫ",
                     "logo": "images/menu/salads-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-6",
+                            "name": "Чикен",
+                            "info": "Булочка с кунжутом, куриное филе в панировке, лист салата, помидор, огурец, сыр Чеддер, соус Барбекю с трюфельным маслом.",
+                            "price": "85.00",
+                            "img": "images/dish/garrys-burg-chicken.jpg",
+                            "menuId": "menu-2"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-13",
                     "name": "ДЕСЕРТЫ",
                     "logo": "images/menu/sups-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-9",
+                            "name": "Чизкейк Вишнёвый",
+                            "info": "Сливочный сыр, песочное печенье, вишня.",
+                            "price": "55.00",
+                            "img": "images/dish/garrys-cherry-dessert.jpg",
+                            "menuId": "menu-3"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-14",
                     "name": "НАПИТКИ",
                     "logo": "images/menu/drinks-img.jpg",
-                    "restoId": "resto-3"
+                    "restoId": "resto-3",
+                    "dishes": [
+                        {
+                            "id": "dish-12",
+                            "name": "Напиток 7 Up",
+                            "info": "7 Up",
+                            "price": "25.00",
+                            "img": "images/dish/garrys-7up-drinks.jpg",
+                            "menuId": "menu-4"
+                        }
+                    ]
                 },
                 {
                     "id": "menu-15",
                     "name": "АЛКОГОЛЬ",
                     "logo": "images/menu/alko-img.jpg",
                     "restoId": "resto-3"
+
                 }
             ]
         }
