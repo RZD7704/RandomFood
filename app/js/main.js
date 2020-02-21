@@ -83,7 +83,12 @@ function initMap() {
 
 		$('.btn-choose-random').click(() => {
 			openRandomMenu();
-		})
+			showNameResto();
+		});
+
+		// $('.btn-show-name').click(() => {
+		// 	showNameResto();
+		// });
 
 		// $('.btn-choose-random').click(() => {
 		// 	openMenu();
@@ -218,7 +223,27 @@ function initMap() {
 		function openRandomMenu() {
 			let restIndex = Math.floor(Math.random() * $restaurants.length);
 			openMenu(restIndex);
+			
 		}
 
+		function showNameResto() {
+			let outNameResto = document.getElementById('name-resto'),
+				garrys = "Garrys",
+				rise = "Rise",
+				shade = "Shade Burger",
+				randomRestIndex = localStorage.getItem('randomRestIndex');
+
+
+			if(randomRestIndex == 0) {
+				outNameResto.innerHTML = garrys;
+			}else if (randomRestIndex == 1) {
+				outNameResto.innerHTML = rise;
+			}else if (randomRestIndex == 2) {
+				outNameResto.innerHTML = shade;
+			}
+
+			console.log('yes');
+		}
+		
 	});
 })(jQuery);

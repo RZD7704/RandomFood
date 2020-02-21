@@ -33,9 +33,9 @@
 				</div>
 				<a href="#" class="menu-btn">
 					<svg class="icon burger-icon">
-					  <use xlink:href="images/sprite.svg#burger-menu"></use>
+						<use xlink:href="images/sprite.svg#burger-menu"></use>
 					</svg>
-				  </a>
+				</a>
 			</div>
 			<div class="profile-icons">
 				<p>Poltava</p>
@@ -114,16 +114,17 @@
 
 				<div class="menu">
 					<nav class="menu-list">
-					  <a href="index.html">Главная</a>
-					  <a href="restaurant.html">Рестораны</a>
-					  <a href="index.html#stock">Скидки</a>
-					  <a href="index.html#contacts">Доставка</a>
+						<a href="index.html">Главная</a>
+						<a href="restaurant.html">Рестораны</a>
+						<a href="index.html#stock">Скидки</a>
+						<a href="index.html#contacts">Доставка</a>
 					</nav>
-				  </div>
+				</div>
 				<h1 class="menus__h1">МЕНЮ</h1>
+				<h2 id="name-resto" class="name-resto">the name of resaurant</h2> <!-- //Сюда выводим название ресторана -->
 
 				<div class="menus">
-					
+
 				</div>
 				<div class="button">
 					<a href="dishes.html">
@@ -140,47 +141,47 @@
 	</section>
 	<footer class="footer-body">
 		<div class="container">
-		  <div class="footer">
-			<div class="footer__text">
-			  <a href="tel:+380957404950" class="footer__text--a">
-				<p class="footer__text--p">Наши контакты: <br> (095)7404950 </p>
-			  </a>
+			<div class="footer">
+				<div class="footer__text">
+					<a href="tel:+380957404950" class="footer__text--a">
+						<p class="footer__text--p">Наши контакты: <br> (095)7404950 </p>
+					</a>
+				</div>
+				<div class="logo1">
+					<a class="logo-header" href="#">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#desktop-logo"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="footer__links">
+					<ul class="footer__links--ul">
+						<li class="footer__links--call">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#footer-call"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__links--message">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#footer-message"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__links--insta">
+							<a class="footer__links--a" href="#">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#footer-insta"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="logo1">
-			  <a class="logo-header" href="#">
-				<svg class="icon">
-				  <use xlink:href="images/sprite.svg#desktop-logo"></use>
-				</svg>
-			  </a>
-			</div>
-			<div class="footer__links">
-			  <ul class="footer__links--ul">
-				<li class="footer__links--call">
-				  <a class="footer__links--a" href="#">
-					<svg class="icon">
-					  <use xlink:href="images/sprite.svg#footer-call"></use>
-					</svg>
-				  </a>
-				</li>
-				<li class="footer__links--message">
-				  <a class="footer__links--a" href="#">
-					<svg class="icon">
-					  <use xlink:href="images/sprite.svg#footer-message"></use>
-					</svg>
-				  </a>
-				</li>
-				<li class="footer__links--insta">
-				  <a class="footer__links--a" href="#">
-					<svg class="icon">
-					  <use xlink:href="images/sprite.svg#footer-insta"></use>
-					</svg>
-				  </a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
 		</div>
-	  </footer>
+	</footer>
 
 
 	<!--build:js js/main.min.js -->
@@ -188,7 +189,8 @@
 	<script src="js/libs/bootstrap.bundle.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
 		async defer></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/login.js.js"></script>
 	<!--endbuild-->
 </body>
 
