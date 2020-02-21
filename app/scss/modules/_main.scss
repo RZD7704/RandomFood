@@ -31,6 +31,13 @@
     @media (min-width: 900px) {
         color: white;
         background-color: var(--orange);
+
+        &:hover {
+            background-color: #474B5D;
+            border: 2px solid var(--orange);
+            color: var(--white);
+            border-radius: 200px;
+        }
     }
 
     background-color: inherit;

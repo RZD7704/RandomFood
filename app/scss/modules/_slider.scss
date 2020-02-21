@@ -1,0 +1,32 @@
+.sl {
+    margin-top: 50px;
+
+    &__desc {
+        color: black;
+    }
+}
+
+// .sl__slide {
+//     position: relative;
+// }
+
+.sl__slide img {
+    width: 100%;
+}
+
+
+.sl__text {
+    // position: absolute;
+    bottom: 0;
+    background: #fff;
+    height: 200px;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slick-dots li button:before {
+    color: blue;
+}

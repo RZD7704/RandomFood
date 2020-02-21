@@ -11,8 +11,10 @@
 	<link rel="icon" href="images/favicon.png">
 
 	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="css/global.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/libs/slick.css" />
+    <link rel="stylesheet" href="css/libs/slick-theme.css" />
+    <link rel="stylesheet" href="css/global.min.css" />
 	<!--endbuild-->
 
 	<!--[if lt IE 9]>
@@ -109,8 +111,34 @@
 
 
 	<section class="main">
-		<div class="container">
 			<div class="main-info wrapper">
+                <div class="container">
+                <div class="window-end" id="window-end" name="window">
+                    <!-- Картинка крестика -->
+                    <div class="form form__end">
+                      <a class="logo-header form-logo" href="#">
+                        <svg class="icon form-logo-img">
+                          <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+                        </svg>
+                      </a>
+                      <div class="reg-end__info">
+                        <h1 class="reg-end__info--h1">
+                            Спасибо за заказ!
+                        </h1>
+                        <p class="reg-end__info--p">
+                            Ваша еда готовиться.
+                            Ожидайте звонка курьера. 
+                        </p>
+                      </div>
+                      <form action="index.html" name="f1">
+                        <div class="button input__btn-1 btn-go-main">
+                          <a href="index.html">
+                            <div class="btn input__btn">НА ГЛАВНУЮ</div>
+                          </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
 
 				<div class="menu">
 					<nav class="menu-list">
@@ -122,12 +150,106 @@
 				  </div>
 				<h1 class="menus__h1">БЛЮДА</h1>
 
-				<div class="dishes">
-					
+				<div class="row sl dishes">
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-margo-pizza.jpg" alt="Картинка слайда №1" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Пицца Маргарита</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Фирменный томатный соус с базиликом, помидоры, двойная порция сыра Моцареллы, орегано.</p>
+                            <p class="price">130.00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-vanila-dessert.jpg" alt="Картинка слайда №2" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Карамельный чизкейк</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Сливочный сыр, песочное печенье, карамель.</p>
+                            <p class="price">55,00 грн</p>
+
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-7up-drinks.jpg" alt="Картинка слайда №3" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">7 Up</h3>
+                            <p class="sl__desc">Состав: <br>
+                                            7 Up
+                            </p>
+                            <p class="price">25,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-burg-classic.jpg" alt="Картинка слайда №4" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Бургер Классический</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Булочка с кунжутом, котлета из говядины, лист салата, маринованный огурец, помидор, сыр Чеддер, соус Барбекю с трюфельным маслом.</p>
+                                <p class="price">75,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-shok-dessert.jpg" alt="Картинка слайда №5" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Шоколадный фондан</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Шоколадный кекс с жидким шоколадом внутри.</p>
+                            <p class="price">55,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-mirinda-drinks.jpg" alt="Картинка слайда №6" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Mirinda</h3>
+                            <p class="sl__desc">Состав: <br>
+                                            Mirinda
+                            </p>
+                            <p class="price">25,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-neapol-dog.jpg" alt="Картинка слайда №7" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Хот-дог Неаполь</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Булочка, сосиска, помидор, сыр Фета, сыр Пармезан, листья салата, соус Ранч.</p>
+                                <p class="price">75,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-cherry-dessert.jpg" alt="Картинка слайда №8" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Чизкейк Вишнёвый</h3>
+                            <p class="sl__desc">Состав: <br>
+                                Сливочный сыр, песочное печенье, вишня.
+                            </p>
+                            <p class="price">55,00 грн</p>
+                        </div>
+                    </div>
+                    <div class="sl__slide col-md-4">
+                        <img src="images/dish/garrys-pepsi-drinks.jpg" alt="Картинка слайда №9" class="sl__img">
+                        <div class="sl__text">
+                            <h3 class="sl__zag">Pepsi Cola</h3>
+                            <p class="sl__desc">Состав: <br>Pepsi Cola
+                            </p>
+                            <p class="price">25,00 грн</p>
+                        </div>
+                    </div>
 				</div>
-				<div class="button">
+				<div class="button btn__end">
 					<a href="#">
-						<div class="btn btn-choose-random">Выбрать рандомно</div>
+						<div class="btn">В КОРЗИНУ</div>
+					</a>
+                </div>
+                <!-- <div  class="button slick-next slick-arrow carousel-content" aria-label="Next" type="button" style>
+					<a href="#">
+						<div class="btn">ДРУГОЕ МЕНЮ</div>
+					</a>
+                </div> -->
+                <div  class="button">
+					<a href="#">
+						<div class="btn">ДРУГОЕ МЕНЮ</div>
 					</a>
 				</div>
 			</div>
@@ -179,11 +301,13 @@
 
 
 	<!--build:js js/main.min.js -->
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
-		async defer></script>
-	<script src="js/main.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/libs/slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"
+      async defer></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 	<!--endbuild-->
 </body>
 
