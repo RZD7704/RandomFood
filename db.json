@@ -52,8 +52,7 @@
                     "id": "menu-7",
                     "name": "Суши",
                     "logo": "images/menu/sushi-logo.png",
-                    "restoId": "resto-2"    }
-                    ]
+                    "restoId": "resto-2"    
                 },
                 {
                     "id": "menu-8",
@@ -74,7 +73,7 @@
                     "restoId": "resto-2"
                 }
             ]
-        },
+        },           
         {
             "id": "resto-3",
             "name": "SHADE BURGER",
@@ -96,24 +95,20 @@
                     "name": "ДЕСЕРТЫ",
                     "logo": "images/menu/sups-img.jpg",
                     "restoId": "resto-3"
-
                 },
                 {
                     "id": "menu-14",
                     "name": "НАПИТКИ",
                     "logo": "images/menu/drinks-img.jpg",
                     "restoId": "resto-3"
-
                 },
                 {
                     "id": "menu-15",
                     "name": "АЛКОГОЛЬ",
                     "logo": "images/menu/alko-img.jpg",
                     "restoId": "resto-3"
-
                 }
             ]
         }
     ]
-  
 }
