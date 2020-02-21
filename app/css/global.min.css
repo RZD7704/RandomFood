@@ -378,7 +378,8 @@ svg.icon.main-logo__icon {
   font-size: 14px; }
 
 .contacts {
-  background: #474B5D; }
+  background: #474B5D;
+  position: relative; }
   @media (min-width: 900px) {
     .contacts__devide {
       display: -webkit-box;
@@ -485,6 +486,9 @@ svg.icon.main-logo__icon {
 @media (min-width: 900px) {
   .btn-choose-random {
     margin-top: 65px; } }
+
+.cover {
+  position: relative; }
 
 #window-log {
   width: 335px;
