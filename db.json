@@ -200,17 +200,6 @@
                     "id": "menu-12",
                     "name": "БУРГЕРЫ",
                     "logo": "images/menu/salads-img.jpg",
-                    "restoId": "resto-3",
-                    "dishes": [
-                        {
-                            "id": "dish-6",
-                            "name": "Чикен",
-                            "info": "Булочка с кунжутом, куриное филе в панировке, лист салата, помидор, огурец, сыр Чеддер, соус Барбекю с трюфельным маслом.",
-                            "price": "85.00",
-                            "img": "images/dish/garrys-burg-chicken.jpg",
-                            "menuId": "menu-2"
-                        }
-                    ]
                 },
                 {
                     "id": "menu-13",
