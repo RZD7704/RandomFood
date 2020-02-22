@@ -95,6 +95,10 @@ function initMap() {
 			
 		});
 
+		// $('.btn-basket').click(() => {
+		// 	basket();
+		// })
+
 		// $('.btn-choose-random').click(() => {
 		// 	openRandomMenu();
 		// 	showNameResto();
@@ -152,6 +156,10 @@ function initMap() {
 				showNameResto();
 
 			});
+		}else if (window.location.pathname === '/dishes.html') {
+			summ();
+		}else if (window.location.pathname === '/basket.html') {
+			basket();
 		}
 
 
@@ -279,9 +287,25 @@ function initMap() {
 		}
 
 		// function summ() {
-		// 	if
+		// 	let threeSlider = document.querySelectorAll('.card1');
+		// 	let slider = threeSlider.getAttribute('data-slider');
+		// 	console.log();
 		// }
 
+		// function basket() {
+		// 	let street = querySelector('.street').value,
+		// 		house = querySelector('.house').value,
+		// 		entry = querySelector('.entry-house').value,
+		// 		name = querySelector('.basket-name'.value),
+		// 		phone = querySelector('.basket-phone').value;
+
+		// 	localStorage.setItem('street', street);
+		// 	localStorage.setItem('.house', house);
+		// 	localStorage.setItem('entry', entry);
+		// 	localStorage.setItem('.name', name);
+		// 	localStorage.setItem('.phone', phone);	
+
+		// }
 
 	});
 })(jQuery);
