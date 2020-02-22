@@ -502,6 +502,9 @@ svg.icon.main-logo__icon {
 form {
   margin-top: 40px; }
 
+.link__name {
+  margin-top: 15px; }
+
 #window-log {
   width: 335px;
   height: 565px;

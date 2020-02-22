@@ -259,9 +259,6 @@ function initMap() {
 		}
 
 
-		
-
-
 		function showNameResto() {
 			let outNameResto = document.getElementById('name-resto'),
 				garrys = "Garrys",
@@ -281,7 +278,9 @@ function initMap() {
 			console.log(restIndex);
 		}
 
-
+		// function summ() {
+		// 	if
+		// }
 
 
 	});
