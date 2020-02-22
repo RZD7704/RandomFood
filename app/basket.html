@@ -74,45 +74,37 @@
 	</header>
 
 
-	<div id="window-log" name="window">
-		<!-- Картинка крестика -->
-		<div class="close-icon">
-			<a href="#">
-				<svg class="icon">
-					<use xlink:href="images/sprite.svg#popup-close"></use>
-				</svg>
-			</a>
-		</div>
-		<div class="form">
-			<a class="logo-header form-logo" href="#">
-				<svg class="icon form-logo-img">
-					<use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
-				</svg>
-			</a>
-			<form action="index.html" name="f1">
-				<!-- <input type="submit" value="Google" name="sab" class="input input__networks" /> -->
-				<!-- <input type="submit" value="Facebook" name="sab" class="input input__networks" /> -->
-				<input type="email" placeholder="Email" name="email" class="input input__fields" />
-				<input type="password" placeholder="Пароль" name="pass1"
-					class="input input__fields input__fields-last" />
-				<div class="button input__btn-1">
-					<a href="#">
-						<div class="btn input__btn">Вход</div>
-					</a>
-				</div>
-				<div class="button">
-					<a href="#">
-						<div class="btn input__btn input__btn-2">Регистрация</div>
-					</a>
-				</div>
-			</form>
-		</div>
-	</div>
 
 	<div class="cover">
 		<section class="main">
 			<div class="container">
 				<div class="main-info wrapper">
+                    <div class="window-end" id="window-end" name="window">
+                        <!-- Картинка крестика -->
+                        <div class="form form__end">
+                          <a class="logo-header form-logo" href="#">
+                            <svg class="icon form-logo-img">
+                              <use xlink:href="images/sprite.svg#logo-desktop-orange"></use>
+                            </svg>
+                          </a>
+                          <div class="reg-end__info">
+                            <h1 class="reg-end__info--h1">
+                                Спасибо за заказ!
+                            </h1>
+                            <p class="reg-end__info--p">
+                                Ваша еда готовиться.
+                                Ожидайте звонка курьера. 
+                            </p>
+                          </div>
+                          <form action="index.html" name="f1">
+                            <div class="button input__btn-1 btn-go-main">
+                              <a href="index.html">
+                                <div class="btn input__btn">НА ГЛАВНУЮ</div>
+                              </a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
 
 					<div class="menu">
 						<nav class="menu-list">
@@ -123,17 +115,31 @@
 						</nav>
 					  </div>
 
-					<h1 class="restaurant--h1">Выбор ресторана</h1>
+					<h1 class="restaurant--h1">КОРЗИНА</h1>
 
 
-					<div class="restaurants">
+					<div class="basket">
 						
-					</div>
-					<div class="button" id="random-rest-btn">
+                    </div>
+                    <form class="basket__form" action="basket.html" name="f1">
+                        <!-- <input type="submit" value="Google" name="sab" class="input input__networks" /> -->
+                        <!-- <input type="submit" value="Facebook" name="sab" class="input input__networks" /> -->
+                        <input type="text" id="street-user" placeholder="Улица" name="street" class="input input__fields input__basket" />
+                        <input type="text" id="bld-user" placeholder="Дом" name="House"class="input input__fields input__basket" />
+                        <input type="text" id="prch-user" placeholder="Подьезд" name="Porch"class="input input__fields input__basket" />
+                        <input type="text" id="name-user" placeholder="Имя" name="Name" class="input input__fields input__basket" />
+                        <input type="number" id="numb-tel" placeholder="Мобильный телефон" name="tel"class="input input__fields input__basket" />
+                        <div class="button btn__end" id="random-rest-btn">
+                            <a href="#">
+                                <div class="btn">ЗАКАЗАТЬ</div>
+                            </a>
+                        </div>
+                      </form>
+					<!-- <div class="button" id="random-rest-btn">
 						<a href="menu.html">
 							<div class="btn btn-choose-random">Выбрать рандомно</div>
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
