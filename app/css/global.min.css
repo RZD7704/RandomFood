@@ -833,6 +833,9 @@ form {
   background-color: #FC9908;
   color: #fff; }
 
+.link__div {
+  margin: 0 10px; }
+
 .link__img {
   display: block;
   max-width: 120px;
@@ -842,9 +845,17 @@ form {
   height: 375px;
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-align: center;
           align-items: center;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 900px) {
+    .menus {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center; } }
   .menus__h1 {
     font-size: 36px;
     line-height: 28px;
@@ -854,6 +865,15 @@ form {
     @media (max-width: 900px) {
       .menus__h1 {
         margin-top: 160px; } }
+  .menus__h2 {
+    font-size: 36px;
+    line-height: 28px;
+    color: #F2E7FE;
+    text-align: center;
+    margin-top: 30px; }
+    @media (max-width: 900px) {
+      .menus__h2 {
+        margin-top: 30px; } }
 
 #window-end {
   width: 335px;

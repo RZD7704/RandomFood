@@ -13,6 +13,10 @@
         
 //     }
 
+    &__div {
+        margin: 0 10px;
+    }
+
     &__img {
         display: block;
         max-width: 120px;
@@ -21,10 +25,18 @@
 }
 
 .menus {
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        // flex-wrap: wrap;
+        
+    }
+
     height: 375px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__h1 {
         @media (max-width: 900px) {
@@ -36,5 +48,17 @@
         color: #F2E7FE;
         text-align: center;
         margin-top: 120px;
+    }
+
+    &__h2 {
+        @media (max-width: 900px) {
+            margin-top: 30px;
+        }
+
+        font-size: 36px;
+        line-height: 28px;
+        color: #F2E7FE;
+        text-align: center;
+        margin-top: 30px;
     }
 }

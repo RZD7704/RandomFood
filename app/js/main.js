@@ -43,7 +43,7 @@ function initMap() {
 	let SERVER_URL = 'https://my-json-server.typicode.com/RZD7704/RandomFood',
 		$restaurants = [];
 
-	
+
 
 
 
@@ -92,13 +92,18 @@ function initMap() {
 
 		$('.btn-choose-random').click(() => {
 			openRandomMenu();
-			showNameResto();
+			
 		});
+
+		// $('.btn-choose-random').click(() => {
+		// 	openRandomMenu();
+		// 	showNameResto();
+		// });
 
 		// $('.btn-show-name').click(() => {
 		// 	showNameResto();
 		// });
-		
+
 		$('.btn__end').click(() => {
 			showEnd();
 		});
@@ -124,14 +129,14 @@ function initMap() {
 				// TODO: draw elements restaurant
 				$restaurants.forEach((resto, index) => {
 					let restaurantsList = $('.restaurants'); //масив ресторанов
-					restaurantsList.append(drawItem(resto, 'menu.html')); 
+					restaurantsList.append(drawItem(resto, 'menu.html'));
 					console.log(restaurantsList);
-					
+
 					restaurantsList[0].children[index].onclick = () => openMenu(index);
 
 				});
 			});
-		}else if (window.location.pathname === '/menu.html') {
+		} else if (window.location.pathname === '/menu.html') {
 			$.ajax({
 				url: `${SERVER_URL}/restaurants`,
 				type: 'GET'
@@ -144,11 +149,12 @@ function initMap() {
 				$restaurants[+index].menus.forEach((menu) => {
 					$('.menus').append(drawItem(menu, 'order.html'));
 				});
+				showNameResto();
 
 			});
 		}
-			
-		
+
+
 
 
 
@@ -249,8 +255,12 @@ function initMap() {
 		function openRandomMenu() {
 			let restIndex = Math.floor(Math.random() * $restaurants.length);
 			openMenu(restIndex);
-			
+
 		}
+
+
+		
+
 
 		function showNameResto() {
 			let outNameResto = document.getElementById('name-resto'),
@@ -260,16 +270,19 @@ function initMap() {
 				randomRestIndex = localStorage.getItem('randomRestIndex');
 
 
-			if(randomRestIndex == 0) {
+			if (randomRestIndex == 0) {
 				outNameResto.innerHTML = garrys;
-			}else if (randomRestIndex == 1) {
+			} else if (randomRestIndex == 1) {
 				outNameResto.innerHTML = rise;
-			}else if (randomRestIndex == 2) {
+			} else if (randomRestIndex == 2) {
 				outNameResto.innerHTML = shade;
 			}
 
-			console.log('yes');
+			console.log(restIndex);
 		}
-		
+
+
+
+
 	});
 })(jQuery);
